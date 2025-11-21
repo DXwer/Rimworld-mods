@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <ThingCategoryDef>
+        <defName>Ammo84x254mmChargedRockets</defName>
+        <label>84x254mm Charge Rockets</label>
+        <parent>AmmoRockets</parent>
+        <iconPath>UI/Icons/ThingCategories/EccentricCaliberChargedRocket</iconPath>
+    </ThingCategoryDef>
+
+    <CombatExtended.AmmoSetDef>
+        <defName>AmmoSet_84x254mmChargedRockets</defName>
+        <label>84x254mm Charge Rocket</label>
+        <ammoTypes>
+            <Ammo_84x254mmChargedRockets_HEDP>Bullet_Eccentric84x254mmChargedRockets_HEDP</Ammo_84x254mmChargedRockets_HEDP>
+            <Ammo_84x254mmChargedRockets_EMP>Bullet_Eccentric84x254mmChargedRockets_EMP</Ammo_84x254mmChargedRockets_EMP>
+        </ammoTypes>
+    </CombatExtended.AmmoSetDef>
+
+    <!--HEDP-->
+
+    <ThingDef Class="CombatExtended.AmmoDef" ParentName="MediumAmmoBase">
+        <thingClass>CombatExtended.AmmoThing</thingClass>
+        <defName>Ammo_84x254mmChargedRockets_HEDP</defName>
+        <label>84x254mm Charge Rocket (HEDP)</label>
+        <description>A heavy tandem-warhead shell used in charge recoilless rifles.</description>
+        <graphicData>
+            <texPath>Things/Eccentric/Ammo/M5/HE</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <statBases>
+            <Mass>3</Mass>
+            <Bulk>9.6</Bulk>
+            <MarketValue>100</MarketValue>
+        </statBases>
+        <tradeTags>
+            <li>CE_AutoEnableCrafting</li>
+        </tradeTags>
+        <thingCategories>
+            <li>Ammo84x254mmChargedRockets</li>
+        </thingCategories>
+        <stackLimit>25</stackLimit>
+        <cookOffFlashScale>40</cookOffFlashScale>
+        <ammoClass>RocketHE</ammoClass>
+        <cookOffProjectile>Bullet_Eccentric84x254mmChargedRockets_HEDP</cookOffProjectile>
+    </ThingDef>
+
+    <!--HEDP Recipe-->
+
+    <RecipeDef ParentName="AmmoRecipeBase">
+        <defName>MakeAmmo_84x254mmChargedRockets_HEDP</defName>
+        <label>make 84x254mm HEDP charge rockets x5</label>
+        <description>Craft 5 84x254mm HEDP rockets.</description>
+        <jobString>Making 84x254mm HEDP charge rockets.</jobString>
+        <researchPrerequisite>Eccentric_ChargedLaunchers</researchPrerequisite>
+        <skillRequirements>
+            <Crafting>7</Crafting>
+        </skillRequirements>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Plasteel</li>
+                    </thingDefs>
+                </filter>
+                <count>50</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>FSX</li>
+                    </thingDefs>
+                </filter>
+                <count>20</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ComponentIndustrial</li>
+                    </thingDefs>
+                </filter>
+                <count>8</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Plasteel</li>
+                <li>FSX</li>
+                <li>ComponentIndustrial</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <Ammo_84x254mmChargedRockets_HEDP>5</Ammo_84x254mmChargedRockets_HEDP>
+        </products>
+    </RecipeDef>
+
+    <!--HEDP Projectile-->
+
+    <ThingDef ParentName="BaseBullet">
+        <defName>Bullet_Eccentric84x254mmChargedRockets_HEDP</defName>
+        <label>84x254mm charge rocket (HEDP)</label>
+        <thingClass>EccentricProjectiles.ProjectileCE_ExplosiveWithEffects</thingClass>
+        <graphicData>
+            <texPath>Things/Eccentric/Projectile/CAW5Projectile</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>TransparentPostLight</shaderType>
+            <drawSize>1</drawSize>
+        </graphicData>
+        <projectile Class="CombatExtended.ProjectilePropertiesCE">
+            <speed>64</speed>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>248</damageAmountBase>
+            <armorPenetrationSharp>250</armorPenetrationSharp>
+            <armorPenetrationBlunt>32</armorPenetrationBlunt>
+            <soundAmbient>RocketPropelledLoop_Small</soundAmbient>
+        </projectile>
+        <comps>
+            <li Class="CombatExtended.CompProperties_ExplosiveCE">
+                <damageAmountBase>220</damageAmountBase>
+                <explosiveDamageType>Bomb</explosiveDamageType>
+                <explosiveRadius>3</explosiveRadius>
+                <explosionSound>MortarBomb_Explode</explosionSound>
+                <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+            </li>
+            <li Class="CombatExtended.CompProperties_Fragments">
+                <fragments>
+                    <Fragment_Large>5</Fragment_Large>
+                    <Fragment_Small>30</Fragment_Small>
+                </fragments>
+            </li>
+        </comps>
+        <modExtensions>
+            <li Class="EccentricProjectiles.ModExtension_ProjectileEffects">
+                <effects>
+                    <li>Eccentric_PulseRocketTrail</li>
+                </effects>
+            </li>
+        </modExtensions>
+    </ThingDef>
+
+    <!--EMP-->
+    <ThingDef Class="CombatExtended.AmmoDef" ParentName="MediumAmmoBase">
+        <thingClass>CombatExtended.AmmoThing</thingClass>
+        <defName>Ammo_84x254mmChargedRockets_EMP</defName>
+        <label>84x254mm Charge Rocket (EMP)</label>
+        <description>A heavy tandem-warhead shell used in charge recoilless rifles.</description>
+        <graphicData>
+            <texPath>Things/Eccentric/Ammo/M5/EMP</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <statBases>
+            <Mass>3</Mass>
+            <Bulk>9.6</Bulk>
+            <MarketValue>100</MarketValue>
+        </statBases>
+        <tradeTags>
+            <li>CE_AutoEnableCrafting</li>
+        </tradeTags>
+        <thingCategories>
+            <li>Ammo84x254mmChargedRockets</li>
+        </thingCategories>
+        <stackLimit>25</stackLimit>
+        <cookOffFlashScale>40</cookOffFlashScale>
+        <ammoClass>GrenadeEMP</ammoClass>
+        <cookOffProjectile>Bullet_Eccentric84x254mmChargedRockets_EMP</cookOffProjectile>
+    </ThingDef>
+
+    <!--EMP Recipe-->
+
+    <RecipeDef ParentName="AmmoRecipeBase">
+        <defName>MakeAmmo_84x254mmChargedRockets_EMP</defName>
+        <label>make 84x254mm EMP charge rockets x5</label>
+        <description>Craft 5 84x254mm EMP rockets.</description>
+        <jobString>Making 84x254mm EMP charge rockets.</jobString>
+        <researchPrerequisite>Eccentric_ChargedLaunchers</researchPrerequisite>
+        <skillRequirements>
+            <Crafting>7</Crafting>
+        </skillRequirements>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Plasteel</li>
+                    </thingDefs>
+                </filter>
+                <count>50</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ComponentIndustrial</li>
+                    </thingDefs>
+                </filter>
+                <count>16</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Plasteel</li>
+                <li>ComponentIndustrial</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <Ammo_84x254mmChargedRockets_EMP>5</Ammo_84x254mmChargedRockets_EMP>
+        </products>
+    </RecipeDef>
+
+    <!--EMP Projectile-->
+
+    <ThingDef ParentName="BaseBullet">
+        <defName>Bullet_Eccentric84x254mmChargedRockets_EMP</defName>
+        <label>84x254mm charge rocket (EMP)</label>
+        <thingClass>EccentricProjectiles.ProjectileCE_ExplosiveWithEffects</thingClass>
+        <graphicData>
+            <texPath>Things/Eccentric/Projectile/CAW5Projectile</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>TransparentPostLight</shaderType>
+            <drawSize>1</drawSize>
+        </graphicData>
+        <projectile Class="CombatExtended.ProjectilePropertiesCE">
+            <speed>64</speed>
+            <explosionRadius>2.8</explosionRadius>
+            <damageDef>EMP</damageDef>
+            <damageAmountBase>95</damageAmountBase>
+            <soundAmbient>RocketPropelledLoop_Small</soundAmbient>
+        </projectile>
+        <modExtensions>
+            <li Class="EccentricProjectiles.ModExtension_ProjectileEffects">
+                <effects>
+                    <li>Eccentric_PulseRocketTrail</li>
+                </effects>
+            </li>
+        </modExtensions>
+    </ThingDef>
+
+</Defs>

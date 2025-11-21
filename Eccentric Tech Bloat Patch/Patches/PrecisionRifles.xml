@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Eccentric_Gun_E16PR"]/comps/li[@Class="CombatExtended.CompProperties_AmmoUser"]/ammoSet</xpath>
+        <value>
+            <ammoSet>AmmoSet_9x72mmCharged</ammoSet>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Eccentric_Gun_E16PR"]/verbs/li[@Class="CombatExtended.VerbPropertiesCE"]/defaultProjectile</xpath>
+        <value>
+            <defaultProjectile>Bullet_Eccentric9x72mmCharged</defaultProjectile>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Eccentric_Gun_E16PR"]/recipeMaker</xpath>
+        <value>
+            <researchPrerequisite>Eccentric_HighCaliberCharge</researchPrerequisite>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Eccentric_Gun_E16PR"]/description</xpath>
+        <value>
+            <description>The E16 is a bolt-action charge rifle that fires powerful 9x72mm charge rounds with deadly precision.\n\nEquipped with a variable-zoom hybrid optic, the E16 is expensive and slow to build, but adds accurate, long-range fire to The Eccentric's arsenal.</description>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Eccentric_Gun_E16PR_TAGM"]/description</xpath>
+        <value>
+            <description>The E16 is a bolt-action charge rifle that fires powerful 9x72mm charge rounds with deadly precision.\n\nEquipped with a variable-zoom hybrid optic, the E16 is expensive and slow to build, but adds accurate, long-range fire to The Eccentric's arsenal.\n\nThis rifle has been equipped with a target acquisition and guidance module which can be used to laser-designate targets for local defense grid artillery platforms.</description>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Eccentric_Gun_E16PR_Hitomi"]/description</xpath>
+        <value>
+            <description>The E16 is a bolt-action charge rifle that fires powerful 9x72mm charge rounds with deadly precision.\n\nEquipped with a variable-zoom hybrid optic, the E16 is expensive and slow to build, but adds accurate, long-range fire to The Eccentric's arsenal.\n\nThis rifle has been customized by Hitomi Luckhardt, a sniper at Angel's Rest. It has been equipped with a target acquisition and guidance module which can be used to laser-designate targets for local defense grid artillery platforms as well as a charge rifle suppressor.</description>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Eccentric_Gun_E18DMR"]/comps/li[@Class="CombatExtended.CompProperties_AmmoUser"]/ammoSet</xpath>
+        <value>
+            <ammoSet>AmmoSet_8x55mmCharged</ammoSet>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Eccentric_Gun_E18DMR"]/verbs/li[@Class="CombatExtended.VerbPropertiesCE"]/defaultProjectile</xpath>
+        <value>
+            <defaultProjectile>Bullet_Eccentric8x55mmCharged</defaultProjectile>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Eccentric_Gun_E18DMR"]/description</xpath>
+        <value>
+            <description>The E18 is a powerful semi-automatic charge rifle that fires the full-sized 8x55mm charge round.\n\nWith a longer range than the standard E15 charge rifle and a faster rate of fire than the E16 precision rifle, the E18 DMR is a potent support weapon for The Eccentric's security staff.</description>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Eccentric_Gun_E21AMR"]/comps/li[@Class="CombatExtended.CompProperties_AmmoUser"]/ammoSet</xpath>
+        <value>
+            <ammoSet>AmmoSet_12x90mmCharged</ammoSet>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Eccentric_Gun_E21AMR"]/verbs/li[@Class="CombatExtended.VerbPropertiesCE"]/defaultProjectile</xpath>
+        <value>
+            <defaultProjectile>Bullet_Eccentric12x90mmCharged</defaultProjectile>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Eccentric_Gun_E21AMR"]/recipeMaker/researchPrerequisite</xpath>
+        <value>
+            <researchPrerequisite>Eccentric_HighCaliberCharge</researchPrerequisite>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Eccentric_Gun_E21AMR"]/description</xpath>
+        <value>
+            <description>The E21 is a heavy anti-materiel rifle firing 12x90mm high-caliber charge rounds with deadly precision. Designed and built by Fiona 'Foxy' Knight of Angel's Rest, the E21 was created in response to an increase in incursions of heavily armored belligerent forces.\n\nThe E21 is exceptionally heavy and slow-firing, intended for taking out heavily armored Spacer or Mechanoid threats.</description>
+        </value>
+    </Operation>
+
+</Patch>

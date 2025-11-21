@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Eccentric_Gun_P17SG"]/comps/li[@Class="CombatExtended.CompProperties_AmmoUser"]/ammoSet</xpath>
+        <value>
+            <ammoSet>AmmoSet_10x24mmCharged</ammoSet>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Eccentric_Gun_P17SG"]/verbs/li[@Class="CombatExtended.VerbPropertiesCE"]/defaultProjectile</xpath>
+        <value>
+            <defaultProjectile>Bullet_Eccentric10x24mmCharged</defaultProjectile>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Eccentric_Turret_P17SG"]/description</xpath>
+        <value>
+            <description>Compact and relatively lightweight, this P17 sub-machine gun been combined with an autonomous fire control system and tripod to form a sentry gun. It fires the small but powerful 10x24mm charged cartridge, allowing it to inflict significant damage at close range despite its small size.\n\nThe P17 has an internal hex-cell battery that allows it to operate without external power, but it still requires ammunition to use.</description>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Eccentric_Gun_L32MG"]/comps/li[@Class="CombatExtended.CompProperties_AmmoUser"]/ammoSet</xpath>
+        <value>
+            <ammoSet>AmmoSet_8x55mmCharged</ammoSet>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Eccentric_Gun_L32MG"]/comps/li[@Class="CombatExtended.CompProperties_AmmoUser"]/magazineSize</xpath>
+        <value>
+            <magazineSize>200</magazineSize>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Eccentric_Gun_L32MG"]/verbs/li[@Class="CombatExtended.VerbPropertiesCE"]/defaultProjectile</xpath>
+        <value>
+            <defaultProjectile>Bullet_Eccentric8x55mmCharged</defaultProjectile>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Eccentric_Turret_L32MG"]/researchPrerequisites/li</xpath>
+        <value>
+            <li>Eccentric_HighCaliberCharge</li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Eccentric_Turret_L32MG"]/description</xpath>
+        <value>
+            <description>The L32 is a mounted medium machine gun that fires powerful, belt-fed 8x55mm charged cartridges. Designed to be used against power armor and light vehicles, L32s are powerful defensive tools.\n\nThe L32 requires external power, a significant amount of ammunition to operate, and must be manned to be fired.</description>
+        </value>
+    </Operation>
+
+</Patch>

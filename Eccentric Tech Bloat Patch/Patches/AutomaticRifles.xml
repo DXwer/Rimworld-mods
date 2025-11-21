@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Eccentric_Gun_E9C" or defName="Eccentric_Gun_E15CR" or defName="Eccentric_Gun_E15CR_CGL2UB"]/comps/li[@Class="CombatExtended.CompProperties_AmmoUser"]/ammoSet</xpath>
+        <value>
+            <ammoSet>AmmoSet_6x45mmCharged</ammoSet>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Eccentric_Gun_E9C" or defName="Eccentric_Gun_E15CR" or defName="Eccentric_Gun_E15CR_CGL2UB"]/verbs/li[@Class="CombatExtended.VerbPropertiesCE"]/defaultProjectile</xpath>
+        <value>
+            <defaultProjectile>Bullet_Eccentric6x45mmCharged</defaultProjectile>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Eccentric_Gun_L20C"]/comps/li[@Class="CombatExtended.CompProperties_AmmoUser"]/ammoSet</xpath>
+        <value>
+            <ammoSet>AmmoSet_8x55mmCharged</ammoSet>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Eccentric_Gun_L20C"]/verbs/li[@Class="CombatExtended.VerbPropertiesCE"]/defaultProjectile</xpath>
+        <value>
+            <defaultProjectile>Bullet_Eccentric8x55mmCharged</defaultProjectile>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Eccentric_Gun_L20C"]/recipeMaker</xpath>
+        <value>
+            <researchPrerequisite>Eccentric_HighCaliberCharge</researchPrerequisite>
+        </value>
+    </Operation>
+</Patch>

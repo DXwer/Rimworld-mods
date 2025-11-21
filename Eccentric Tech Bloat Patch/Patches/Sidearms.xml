@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Eccentric_Gun_S8P" or defName="Eccentric_Gun_P12PDW" or defName="Eccentric_Gun_S8B_Toni"]/comps/li[@Class="CombatExtended.CompProperties_AmmoUser"]/ammoSet</xpath>
+        <value>
+            <ammoSet>AmmoSet_10x24mmCharged</ammoSet>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Eccentric_Gun_S8P" or defName="Eccentric_Gun_P12PDW" or defName="Eccentric_Gun_S8B_Toni"]/verbs/li[@Class="CombatExtended.VerbPropertiesCE"]/defaultProjectile</xpath>
+        <value>
+            <defaultProjectile>Bullet_Eccentric10x24mmCharged</defaultProjectile>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Eccentric_Gun_S8P"]/description</xpath>
+        <value>
+            <description>The S8 charge pistol is the standard-issue sidearm of the Eccentric's staff.\n\nUtilizing the compact 10x24mm charged cartridge, it is heavier than a conventional pistol but far more powerful.</description>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Eccentric_Gun_P12PDW"]/description</xpath>
+        <value>
+            <description>The P12 personal defense weapon is a compact but powerful firearm generally issued to The Eccentric's pilots and vehicle drivers, as well as rear-echelon staff in hostile environments.\n\nUtilizing compact 10x24mm charged cartridges, the P12 is short-ranged but capable of fully automatic fire.</description>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Eccentric_Gun_S8B_Toni"]/description</xpath>
+        <value>
+            <description>This S8 charge pistol has been customized by Toni and modified for burst fire.\n\nFiring 10x24mm charge cartridges from an extended magazine, it is heavier and less accurate than the standard S8 but is capable of far greater damage at close range.</description>
+        </value>
+    </Operation>
+
+</Patch>
