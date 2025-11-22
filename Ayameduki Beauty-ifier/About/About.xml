@@ -1,0 +1,9 @@
+<ModMetaData>
+	<name>Aya Race Beauty-ifier</name>
+	<author>Caravan of the Souls</author>
+    <packageId>Caravan.AyaPretty</packageId>
+	<supportedVersions>
+		<li>1.6</li>
+	</supportedVersions>
+	<description>A patch that increases the base beauty of Aya race pawns.</description>
+</ModMetaData>

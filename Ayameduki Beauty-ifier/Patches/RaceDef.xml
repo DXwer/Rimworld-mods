@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+    
+    <!-- Chaoura -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="HAR_CO_Race_Chaoura_a"]/statBases</xpath>
+        <value>
+            <PawnBeauty>4</PawnBeauty>
+        </value>
+    </Operation>
+
+    <!-- Chaoura Avarzion -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="HAR_CO_Race_Chaoura_z"]/statBases</xpath>
+        <value>
+            <PawnBeauty>8</PawnBeauty>
+        </value>
+    </Operation>
+
+    <!-- Eveliet -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="HAR_EL_Race_Eveliet_a"]/statBases</xpath>
+        <value>
+            <PawnBeauty>3</PawnBeauty>
+        </value>
+    </Operation>
+
+    <!-- Idearn Laches -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="HAR_Idearn_Laches_a"]/statBases</xpath>
+        <value>
+            <PawnBeauty>1</PawnBeauty>
+        </value>
+    </Operation>
+
+    <!-- Idearn Charmides -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="HAR_Idearn_Charmides_a"]/statBases</xpath>
+        <value>
+            <PawnBeauty>2</PawnBeauty>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="HAR_Idearn_Charmides_b"]/statBases</xpath>
+        <value>
+            <PawnBeauty>2</PawnBeauty>
+        </value>
+    </Operation>
+
+    <!-- Idearn Menexenus -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="HAR_Idearn_Menexenus_a"]/statBases</xpath>
+        <value>
+            <PawnBeauty>3</PawnBeauty>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="HAR_Idearn_Menexenus_b"]/statBases</xpath>
+        <value>
+            <PawnBeauty>3</PawnBeauty>
+        </value>
+    </Operation>
+
+    <!-- Idearn Theaetetus -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="HAR_Idearn_Theaetetus_a"]/statBases</xpath>
+        <value>
+            <PawnBeauty>3</PawnBeauty>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="HAR_Idearn_Theaetetus_b"]/statBases</xpath>
+        <value>
+            <PawnBeauty>3</PawnBeauty>
+        </value>
+    </Operation>
+
+    <!-- Idearn Critas -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="HAR_Idearn_Critias"]/statBases</xpath>
+        <value>
+            <PawnBeauty>7</PawnBeauty>
+        </value>
+    </Operation>
+
+    <!-- Idhale -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="HAR_Idhale"]/statBases</xpath>
+        <value>
+            <PawnBeauty>1</PawnBeauty>
+        </value>
+    </Operation>
+
+    <!-- Idhale Avonruach -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="HAR_Idhale_b"]/statBases</xpath>
+        <value>
+            <PawnBeauty>6</PawnBeauty>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="HAR_Idhale_b_Player"]/statBases</xpath>
+        <value>
+            <PawnBeauty>6</PawnBeauty>
+        </value>
+    </Operation>
+
+    <!-- Littluna -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="HAR_Littluna"]/statBases</xpath>
+        <value>
+            <PawnBeauty>2</PawnBeauty>
+        </value>
+    </Operation>
+
+    <!-- Littluna Ideasklavos -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="HAR_Littluna_b"]/statBases</xpath>
+        <value>
+            <PawnBeauty>2</PawnBeauty>
+        </value>
+    </Operation>
+
+    <!-- Littluna Dunamis -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="HAR_Littluna_c"]/statBases</xpath>
+        <value>
+            <PawnBeauty>3</PawnBeauty>
+        </value>
+    </Operation>
+
+    <!-- Nearmare -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="HAR_Nearmaere"]/statBases</xpath>
+        <value>
+            <PawnBeauty>1</PawnBeauty>
+        </value>
+    </Operation>
+
+    <!-- Nearmare Devout -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="HAR_Nearmaere_b"]/statBases</xpath>
+        <value>
+            <PawnBeauty>2</PawnBeauty>
+        </value>
+    </Operation>
+
+    <!-- Nearmare Aradia -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="HAR_Nearmaere_c"]/statBases</xpath>
+        <value>
+            <PawnBeauty>6</PawnBeauty>
+        </value>
+    </Operation>
+
+    <!-- Nearmare Wingate-->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="HAR_Nearmaere_d"]/statBases</xpath>
+        <value>
+            <PawnBeauty>2</PawnBeauty>
+        </value>
+    </Operation>
+
+    <!-- Nearmare Nemesia -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="HAR_Nearmaere_e"]/statBases</xpath>
+        <value>
+            <PawnBeauty>2</PawnBeauty>
+        </value>
+    </Operation>
+
+    <!-- Neclose -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="HAR_Neclose"]/statBases</xpath>
+        <value>
+            <PawnBeauty>2</PawnBeauty>
+        </value>
+    </Operation>
+
+    <!-- Neclose Outisphonia -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="HAR_Neclose_b"]/statBases</xpath>
+        <value>
+            <PawnBeauty>2</PawnBeauty>
+        </value>
+    </Operation>
+
+    <!-- Qualeela-genus -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="HAR_Qualeela"]/statBases</xpath>
+        <value>
+            <PawnBeauty>2</PawnBeauty>
+        </value>
+    </Operation>
+
+    <!-- Qualeela-Keter -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="HAR_Qualeela_b"]/statBases</xpath>
+        <value>
+            <PawnBeauty>4</PawnBeauty>
+        </value>
+    </Operation>
+
+    <!-- Saclean -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="HAR_Saclean"]/statBases</xpath>
+        <value>
+            <PawnBeauty>1</PawnBeauty>
+        </value>
+    </Operation>
+
+    <!-- Silkiera -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="HAR_Silkiera"]/statBases</xpath>
+        <value>
+            <PawnBeauty>1</PawnBeauty>
+        </value>
+    </Operation>
+
+    <!-- Silkiera Quality -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="HAR_Silkiera_b"]/statBases</xpath>
+        <value>
+            <PawnBeauty>2</PawnBeauty>
+        </value>
+    </Operation>
+
+    <!-- Silkiera Vixenmalice -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="HAR_Silkiera_c"]/statBases</xpath>
+        <value>
+            <PawnBeauty>6</PawnBeauty>
+        </value>
+    </Operation>
+
+    <!-- Solark -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="HAR_Solark"]/statBases</xpath>
+        <value>
+            <PawnBeauty>2</PawnBeauty>
+        </value>
+    </Operation>
+
+    <!-- Solark Hallelevh -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="HAR_Solark_b"]/statBases</xpath>
+        <value>
+            <PawnBeauty>4</PawnBeauty>
+        </value>
+    </Operation>
+
+    <!-- Xenoorca -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="HAR_Xenoorca"]/statBases</xpath>
+        <value>
+            <PawnBeauty>2</PawnBeauty>
+        </value>
+    </Operation>
+
+    <!-- Xenoorca Hadalnoia -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="HAR_Xenoorca_b"]/statBases</xpath>
+        <value>
+            <PawnBeauty>4</PawnBeauty>
+        </value>
+    </Operation>
+
+    <!-- Zoichor -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="HAR_Zoichor"]/statBases</xpath>
+        <value>
+            <PawnBeauty>4</PawnBeauty>
+        </value>
+    </Operation>
+
+</Patch>
