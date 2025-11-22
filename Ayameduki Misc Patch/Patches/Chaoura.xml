@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+    <Operation Class="PatchOperationRemove">
+        <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="HAR_CO_Race_Chaoura_a"]/comps/li[@Class="CompProperties_HAR_CO_Dark"]</xpath>
+    </Operation>
+</Patch>
