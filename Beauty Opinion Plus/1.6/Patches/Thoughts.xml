@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThoughtDef[defName="Pretty"]/stages</xpath>
+        <value>
+            <stages>
+                <li>
+                    <label>physically appealing</label>
+                    <baseOpinionOffset>20</baseOpinionOffset>
+                </li>
+                <li>
+                    <label>physically stunning</label>
+                    <baseOpinionOffset>40</baseOpinionOffset>
+                </li>
+                <li>
+                    <label>physically stunning</label>
+                    <baseOpinionOffset>60</baseOpinionOffset>
+                </li>
+                <li>
+                    <label>physically stunning</label>
+                    <baseOpinionOffset>80</baseOpinionOffset>
+                </li>
+                <li>
+                    <label>physically stunning</label>
+                    <baseOpinionOffset>100</baseOpinionOffset>
+                </li>
+                <li>
+                    <label>physically stunning</label>
+                    <baseOpinionOffset>120</baseOpinionOffset>
+                </li>
+                <li>
+                    <label>physically stunning</label>
+                    <baseOpinionOffset>140</baseOpinionOffset>
+                </li>
+                <li>
+                    <label>physically stunning</label>
+                    <baseOpinionOffset>160</baseOpinionOffset>
+                </li>
+                <li>
+                    <label>physically stunning</label>
+                    <baseOpinionOffset>180</baseOpinionOffset>
+                </li>
+                <li>
+                    <label>physically stunning</label>
+                    <baseOpinionOffset>200</baseOpinionOffset>
+                </li>
+            </stages>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationRemove">
+        <xpath>Defs/ThoughtDef[defName="Pretty"]/nullifyingTraits/li[text()="Kind"]</xpath>
+    </Operation>
+</Patch>
