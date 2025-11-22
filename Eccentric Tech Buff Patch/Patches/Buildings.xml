@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+    <!-- Sensor tower -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Eccentric_ArtillerySensorTower"]/comps/li[@Class="EccentricDefenseGrid.CompProperties_ArtillerySensor"]/range</xpath>
+        <value>
+            <range>90</range>
+        </value>
+    </Operation>
+
+    <!-- P17 sentry gun -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Eccentric_Gun_P17SG"]/verbs/li[@Class="CombatExtended.VerbPropertiesCE"]/range</xpath>
+        <value>
+            <range>62</range>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Eccentric_Gun_P17SG"]/comps/li[@Class="CombatExtended.CompProperties_AmmoUser"]/magazineSize</xpath>
+        <value>
+            <magazineSize>240</magazineSize>
+        </value>
+    </Operation>
+
+    <!-- L32 MG -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Eccentric_Gun_L32MG"]/verbs/li[@Class="CombatExtended.VerbPropertiesCE"]/range</xpath>
+        <value>
+            <range>84</range>
+        </value>
+    </Operation>
+
+    <!-- L50 HMG -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Eccentric_Gun_L50HMG"]/verbs/li[@Class="CombatExtended.VerbPropertiesCE"]/range</xpath>
+        <value>
+            <range>95</range>
+        </value>
+    </Operation>
+
+    <!-- ACGL3 AGL -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Eccentric_Gun_M3ACGL"]/verbs/li[@Class="CombatExtended.VerbPropertiesCE"]/range</xpath>
+        <value>
+            <range>84</range>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Eccentric_Gun_M3ACGL"]/comps/li[@Class="CombatExtended.CompProperties_AmmoUser"]/magazineSize</xpath>
+        <value>
+            <magazineSize>72</magazineSize>
+        </value>
+    </Operation>
+
+</Patch>

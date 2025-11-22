@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+    <!-- M36 HE -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="EccentricDefenseGrid_Projectile_M36PGM"]/projectile</xpath>
+        <value>
+            <projectile Class="CombatExtended.ProjectilePropertiesCE">
+                <damageDef>Bomb</damageDef>
+                <damageAmountBase>250</damageAmountBase>
+                <explosionRadius>5.9</explosionRadius>
+                <flyOverhead>true</flyOverhead>
+                <soundExplode>MortarBomb_Explode</soundExplode>
+                <suppressionFactor>3.0</suppressionFactor>
+                <dangerFactor>2.0</dangerFactor>
+                <speed>40</speed>
+            </projectile>
+            <comps>
+                <li Class="CombatExtended.CompProperties_Fragments">
+                    <fragSpeedFactor>1</fragSpeedFactor>
+                    <fragments>
+                        <Fragment_Large>30</Fragment_Large>
+                        <Fragment_Small>60</Fragment_Small>
+                    </fragments>
+                </li>
+            </comps>
+        </value>
+    </Operation>
+
+    <!-- M38 Incendiary -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="EccentricDefenseGrid_Projectile_M38PGM"]/projectile</xpath>
+        <value>
+            <projectile Class="CombatExtended.ProjectilePropertiesCE">
+                <damageDef>PrometheumFlame</damageDef>
+                <damageAmountBase>18</damageAmountBase>
+                <explosionRadius>6.9</explosionRadius>
+                <flyOverhead>true</flyOverhead>
+                <preExplosionSpawnThingDef>FilthPrometheum</preExplosionSpawnThingDef>
+                <preExplosionSpawnChance>0.6</preExplosionSpawnChance>
+                <soundExplode>MortarIncendiary_Explode</soundExplode>
+                <speed>40</speed>
+            </projectile>
+            <comps>
+                <li Class="CombatExtended.CompProperties_ExplosiveCE">
+                    <damageAmountBase>120</damageAmountBase>
+                    <explosiveDamageType>Thermobaric</explosiveDamageType>
+                    <explosiveRadius>3.5</explosiveRadius>
+                    <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+                </li>
+            </comps>
+        </value>
+    </Operation>
+
+    <!-- M39 EMP -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="EccentricDefenseGrid_Projectile_M39PGM"]/projectile</xpath>
+        <value>
+            <projectile Class="CombatExtended.ProjectilePropertiesCE">
+                <damageDef>EMP</damageDef>
+                <damageAmountBase>240</damageAmountBase>
+                <explosionRadius>12.9</explosionRadius>
+                <flyOverhead>true</flyOverhead>
+                <armorPenetrationSharp>0</armorPenetrationSharp>
+                <armorPenetrationBlunt>0</armorPenetrationBlunt>
+                <speed>40</speed>
+            </projectile>
+        </value>
+    </Operation>
+
+    <!-- M48 HEAT -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="EccentricDefenseGrid_Projectile_M48PGM"]/projectile</xpath>
+        <value>
+            <projectile Class="CombatExtended.ProjectilePropertiesCE">
+                <damageDef>Bullet</damageDef>
+                <damageAmountBase>360</damageAmountBase>
+                <armorPenetrationSharp>725</armorPenetrationSharp>
+                <armorPenetrationBlunt>168</armorPenetrationBlunt>
+                <flyOverhead>true</flyOverhead>
+                <soundExplode>MortarBomb_Explode</soundExplode>
+                <suppressionFactor>3.0</suppressionFactor>
+                <dangerFactor>2.0</dangerFactor>
+                <speed>40</speed>
+            </projectile>
+            <comps>
+                <li Class="CombatExtended.CompProperties_ExplosiveCE">
+                    <damageAmountBase>210</damageAmountBase>
+                    <explosiveDamageType>Bomb</explosiveDamageType>
+                    <explosiveRadius>2.9</explosiveRadius>
+                    <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+                </li>
+                <li Class="CombatExtended.CompProperties_Fragments">
+                    <fragSpeedFactor>1</fragSpeedFactor>
+                    <fragments>
+                        <Fragment_Large>10</Fragment_Large>
+                        <Fragment_Small>40</Fragment_Small>
+                    </fragments>
+                </li>
+            </comps>
+        </value>
+    </Operation>
+</Patch>

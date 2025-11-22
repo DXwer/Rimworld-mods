@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+    <!-- ============ Undersuits ============ -->
+
+    <!-- AREL -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="EccentricUndersuitArel"]/statBases/ArmorRating_Sharp</xpath>
+        <value>
+            <ArmorRating_Sharp>16</ArmorRating_Sharp>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="EccentricUndersuitArel"]/statBases/ArmorRating_Blunt</xpath>
+        <value>
+            <ArmorRating_Blunt>32</ArmorRating_Blunt>
+        </value>
+    </Operation>
+
+    <!-- SERAPH -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="EccentricUndersuitSeraph"]/statBases/ArmorRating_Sharp</xpath>
+        <value>
+            <ArmorRating_Sharp>16</ArmorRating_Sharp>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="EccentricUndersuitSeraph"]/statBases/ArmorRating_Blunt</xpath>
+        <value>
+            <ArmorRating_Blunt>32</ArmorRating_Blunt>
+        </value>
+    </Operation>
+
+    <!-- APSARA -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="EccentricUndersuitApsara"]/statBases/ArmorRating_Sharp</xpath>
+        <value>
+            <ArmorRating_Sharp>12</ArmorRating_Sharp>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="EccentricUndersuitApsara"]/statBases/ArmorRating_Blunt</xpath>
+        <value>
+            <ArmorRating_Blunt>24</ArmorRating_Blunt>
+        </value>
+    </Operation>
+
+    <!-- ============ Uniforms ============ -->
+
+    <!-- Combat -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="EccentricUniformCombat"]/statBases/ArmorRating_Sharp</xpath>
+        <value>
+            <ArmorRating_Sharp>30</ArmorRating_Sharp>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="EccentricUniformCombat"]/statBases/ArmorRating_Blunt</xpath>
+        <value>
+            <ArmorRating_Blunt>76</ArmorRating_Blunt>
+        </value>
+    </Operation>
+
+    <!-- Guardian -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="EccentricUniformGuardian"]/statBases/ArmorRating_Sharp</xpath>
+        <value>
+            <ArmorRating_Sharp>38</ArmorRating_Sharp>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="EccentricUniformGuardian"]/statBases/ArmorRating_Blunt</xpath>
+        <value>
+            <ArmorRating_Blunt>100</ArmorRating_Blunt>
+        </value>
+    </Operation>
+
+    <!-- Leader, Tech -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="EccentricUniformLeader" or defName="EccentricUniformTech"]/statBases/ArmorRating_Sharp</xpath>
+        <value>
+            <ArmorRating_Sharp>24</ArmorRating_Sharp>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="EccentricUniformLeader" or defName="EccentricUniformTech"]/statBases/ArmorRating_Blunt</xpath>
+        <value>
+            <ArmorRating_Blunt>52</ArmorRating_Blunt>
+        </value>
+    </Operation>
+
+    <!-- Worker -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="EccentricUniformWorker"]/statBases/ArmorRating_Sharp</xpath>
+        <value>
+            <ArmorRating_Sharp>20</ArmorRating_Sharp>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="EccentricUniformWorker"]/statBases/ArmorRating_Blunt</xpath>
+        <value>
+            <ArmorRating_Blunt>44</ArmorRating_Blunt>
+        </value>
+    </Operation>
+
+    <!-- ============ Headwear ============ -->
+    
+    <!-- Worker Frill -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="EccentricFrillWorker"]/statBases/ArmorRating_Sharp</xpath>
+        <value>
+            <ArmorRating_Sharp>20</ArmorRating_Sharp>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="EccentricFrillWorker"]/statBases/ArmorRating_Blunt</xpath>
+        <value>
+            <ArmorRating_Blunt>44</ArmorRating_Blunt>
+        </value>
+    </Operation>
+
+    <!-- Worker Helmet -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="EccentricFrillWorkerHelmet"]/statBases/ArmorRating_Sharp</xpath>
+        <value>
+            <ArmorRating_Sharp>24</ArmorRating_Sharp>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="EccentricFrillWorkerHelmet"]/statBases/ArmorRating_Blunt</xpath>
+        <value>
+            <ArmorRating_Blunt>52</ArmorRating_Blunt>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="EccentricFrillWorkerHelmet"]/statBases/NightVisionEfficiency_Apparel/text()</xpath>
+        <value>
+            "1.0"
+        </value>
+    </Operation>
+
+    <!-- Combat Frill -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="EccentricFrillCombat"]/statBases/ArmorRating_Sharp</xpath>
+        <value>
+            <ArmorRating_Sharp>24</ArmorRating_Sharp>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="EccentricFrillCombat"]/statBases/ArmorRating_Blunt</xpath>
+        <value>
+            <ArmorRating_Blunt>64</ArmorRating_Blunt>
+        </value>
+    </Operation>
+
+    <!-- Combat Helmet -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="EccentricFrillCombatHelmet"]/statBases/ArmorRating_Sharp</xpath>
+        <value>
+            <ArmorRating_Sharp>30</ArmorRating_Sharp>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="EccentricFrillCombatHelmet"]/statBases/ArmorRating_Blunt</xpath>
+        <value>
+            <ArmorRating_Blunt>76</ArmorRating_Blunt>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="EccentricFrillCombatHelmet"]/statBases/NightVisionEfficiency_Apparel/text()</xpath>
+        <value>
+            "1.0"
+        </value>
+    </Operation>
+
+    <!-- Ballistic Glasses -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="EccentricFrillCombatGlasses"]/statBases/NightVisionEfficiency_Apparel/text()</xpath>
+        <value>
+            "1.0"
+        </value>
+    </Operation>
+
+    <!-- ============ Shields ============ -->
+
+    <!-- Phased -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Eccentric_PhasedShieldBelt"]/statBases/EnergyShieldRechargeRate</xpath>
+        <value>
+            <EnergyShieldRechargeRate>0.9</EnergyShieldRechargeRate>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Eccentric_PhasedShieldBelt"]/statBases/EnergyShieldEnergyMax</xpath>
+        <value>
+            <EnergyShieldEnergyMax>2.25</EnergyShieldEnergyMax>
+        </value>
+    </Operation>
+
+    <!-- Modulated -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Eccentric_ModulatedShieldBelt"]/statBases/EnergyShieldRechargeRate</xpath>
+        <value>
+            <EnergyShieldRechargeRate>0.675</EnergyShieldRechargeRate>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Eccentric_ModulatedShieldBelt"]/statBases/EnergyShieldEnergyMax</xpath>
+        <value>
+            <EnergyShieldEnergyMax>1.80</EnergyShieldEnergyMax>
+        </value>
+    </Operation>
+
+    <!-- Layered -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Eccentric_LayeredShieldBelt"]/statBases/EnergyShieldRechargeRate</xpath>
+        <value>
+            <EnergyShieldRechargeRate>0.75</EnergyShieldRechargeRate>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Eccentric_LayeredShieldBelt"]/statBases/EnergyShieldEnergyMax</xpath>
+        <value>
+            <EnergyShieldEnergyMax>1.95</EnergyShieldEnergyMax>
+        </value>
+    </Operation>
+    
+</Patch>

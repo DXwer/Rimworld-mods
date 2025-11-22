@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+    <name>Eccentric Tech Buff Patch</name>
+    <author>Caravan of the Souls</author>
+    <packageId>Caravan.EccentricTech.BuffPatch</packageId>
+    <modVersion IgnoreIfNoMatchingField="True">1.1</modVersion>
+    <supportedVersions>
+        <li>1.6</li>
+    </supportedVersions>
+    <modDependencies>
+        <li>
+            <packageId>Aelanna.EccentricTech.FoxysArmory2</packageId>
+            <displayName>Eccentric Tech - Foxy's Armory 2.0</displayName>
+            <steamWorkshopUrl>steam://url/CommunityFilePage/2552628608</steamWorkshopUrl>
+        </li>
+        <li>
+            <packageId>CETeam.CombatExtended</packageId>
+            <displayName>Combat Extended</displayName>
+            <steamWorkshopUrl>steam://url/CommunityFilePage/2890901044</steamWorkshopUrl>
+        </li>
+        <li>
+            <packageId>Caravan.EccentricTech.BloatPatch</packageId>
+            <displayName>Eccentric Tech Bloat Patch</displayName>
+        </li>
+    </modDependencies>
+    <loadAfter>
+        <li>Aelanna.EccentricTech.FoxysArmory2</li>
+        <li>Caravan.EccentricTech.BloatPatch</li>
+        <li>CETeam.CombatExtended</li>
+    </loadAfter>
+    <description>Significantly buffs the armor rating of Eccentric Tech apparel and increases the range of all weapons.</description>
+</ModMetaData>

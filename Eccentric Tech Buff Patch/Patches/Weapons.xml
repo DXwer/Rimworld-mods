@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+    <!-- S8 -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Eccentric_Gun_S8P"]/verbs/li[@Class="CombatExtended.VerbPropertiesCE"]/range</xpath>
+        <value>
+            <range>36</range>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Eccentric_Gun_S8P"]/statBases/SightsEfficiency</xpath>
+        <value>
+            <SightsEfficiency>1.25</SightsEfficiency>
+        </value>
+    </Operation>
+
+    <!-- S8B -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Eccentric_Gun_S8B_Toni"]/verbs/li[@Class="CombatExtended.VerbPropertiesCE"]/range</xpath>
+        <value>
+            <range>36</range>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Eccentric_Gun_S8B_Toni"]/statBases/SightsEfficiency</xpath>
+        <value>
+            <SightsEfficiency>1.2</SightsEfficiency>
+        </value>
+    </Operation>
+
+    <!-- P12 -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Eccentric_Gun_P12PDW"]/verbs/li[@Class="CombatExtended.VerbPropertiesCE"]/range</xpath>
+        <value>
+            <range>62</range>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Eccentric_Gun_P12PDW"]/statBases/SightsEfficiency</xpath>
+        <value>
+            <SightsEfficiency>1.25</SightsEfficiency>
+        </value>
+    </Operation>
+
+    <!-- E9C -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Eccentric_Gun_E9C"]/verbs/li[@Class="CombatExtended.VerbPropertiesCE"]/range</xpath>
+        <value>
+            <range>72</range>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Eccentric_Gun_E9C"]/statBases/SightsEfficiency</xpath>
+        <value>
+            <SightsEfficiency>1.25</SightsEfficiency>
+        </value>
+    </Operation>
+
+    <!-- E15 -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Eccentric_Gun_E15CR"]/verbs/li[@Class="CombatExtended.VerbPropertiesCE"]/range</xpath>
+        <value>
+            <range>75</range>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Eccentric_Gun_E15CR"]/statBases/SightsEfficiency</xpath>
+        <value>
+            <SightsEfficiency>1.6</SightsEfficiency>
+        </value>
+    </Operation>
+
+    <!-- L20P -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Eccentric_Gun_L20SAW"]/verbs/li[@Class="CombatExtended.VerbPropertiesCE"]/range</xpath>
+        <value>
+            <range>75</range>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Eccentric_Gun_L20SAW"]/statBases/SightsEfficiency</xpath>
+        <value>
+            <SightsEfficiency>1.6</SightsEfficiency>
+        </value>
+    </Operation>
+
+    <!-- L20C -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Eccentric_Gun_L20C"]/verbs/li[@Class="CombatExtended.VerbPropertiesCE"]/range</xpath>
+        <value>
+            <range>80</range>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Eccentric_Gun_L20C"]/statBases/SightsEfficiency</xpath>
+        <value>
+            <SightsEfficiency>1.6</SightsEfficiency>
+        </value>
+    </Operation>
+
+    <!-- E16 -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Eccentric_Gun_E16PR"]/verbs/li[@Class="CombatExtended.VerbPropertiesCE"]/range</xpath>
+        <value>
+            <range>95</range>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Eccentric_Gun_E16PR"]/statBases/SightsEfficiency</xpath>
+        <value>
+            <SightsEfficiency>4.2</SightsEfficiency>
+        </value>
+    </Operation>
+
+    <!-- E16 Hitomi -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Eccentric_Gun_E16PR_Hitomi"]/verbs/li[@Class="CombatExtended.VerbPropertiesCE"]/range</xpath>
+        <value>
+            <range>95</range>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Eccentric_Gun_E16PR_Hitomi"]/statBases/SightsEfficiency</xpath>
+        <value>
+            <SightsEfficiency>4.2</SightsEfficiency>
+        </value>
+    </Operation>
+
+    <!-- E18 -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Eccentric_Gun_E18DMR"]/verbs/li[@Class="CombatExtended.VerbPropertiesCE"]/range</xpath>
+        <value>
+            <range>80</range>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Eccentric_Gun_E18DMR"]/statBases/SightsEfficiency</xpath>
+        <value>
+            <SightsEfficiency>2.8</SightsEfficiency>
+        </value>
+    </Operation>
+
+    <!-- E21 -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Eccentric_Gun_E21AMR"]/verbs/li[@Class="CombatExtended.VerbPropertiesCE"]/range</xpath>
+        <value>
+            <range>120</range>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Eccentric_Gun_E21AMR"]/statBases/SightsEfficiency</xpath>
+        <value>
+            <SightsEfficiency>4.2</SightsEfficiency>
+        </value>
+    </Operation>
+
+    <!-- CGL1 -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Eccentric_Gun_M1CGL"]/verbs/li[@Class="CombatExtended.VerbPropertiesCE"]/range</xpath>
+        <value>
+            <range>62</range>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Eccentric_Gun_M1CGL"]/statBases/SightsEfficiency</xpath>
+        <value>
+            <SightsEfficiency>1.25</SightsEfficiency>
+        </value>
+    </Operation>
+
+    <!-- CAW5 -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Eccentric_Gun_M5CAW"]/verbs/li[@Class="CombatExtended.VerbPropertiesCE"]/range</xpath>
+        <value>
+            <range>75</range>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Eccentric_Gun_M5CAW"]/statBases/SightsEfficiency</xpath>
+        <value>
+            <SightsEfficiency>2.4</SightsEfficiency>
+        </value>
+    </Operation>
+
+    <!-- M5 -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Eccentric_Gun_M5RR"]/verbs/li[@Class="CombatExtended.VerbPropertiesCE"]/range</xpath>
+        <value>
+            <range>82</range>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Eccentric_Gun_M5RR"]/statBases/SightsEfficiency</xpath>
+        <value>
+            <SightsEfficiency>2.75</SightsEfficiency>
+        </value>
+    </Operation>
+
+</Patch>
