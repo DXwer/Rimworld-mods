@@ -1,9 +1,9 @@
 <ModMetaData>
-	<name>Beauty Matters</name>
-	<author>InertialMage</author>
-    <packageId>InertialMage.BeautyStatMod</packageId>
+	<name>Beauty Opinion Plus</name>
+	<author>Caravan of the Souls</author>
+    <packageId>Caravan.BeautyOpinion</packageId>
 	<supportedVersions>
 		<li>1.6</li>
 	</supportedVersions>
-	<description>A patch that allows beauty to affect more social stats instead of capping out at 2</description>
+	<description>A patch that allows the opinion buff from pawn beauty to stack up to 10 times and makes Kind pawns appreciate beauty.</description>
 </ModMetaData>
