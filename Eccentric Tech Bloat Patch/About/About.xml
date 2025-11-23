@@ -22,6 +22,7 @@
     <loadAfter>
         <li>Aelanna.EccentricTech.FoxysArmory2</li>
         <li>CETeam.CombatExtended</li>
+        <li>Vortex.CustomizeWeapon</li>
     </loadAfter>
     <description>Adds more weapons to Eccentric Tech. Requires Combat Extended!</description>
 </ModMetaData>

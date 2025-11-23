@@ -1,0 +1,75 @@
+<Defs>
+    <CWF.AdapterDef>
+        <defName>Eccentric_Gun_L20SAW</defName>
+        <graphicData>
+            <texPath>Things/Eccentric/Weapons/L20C_SAW</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <weaponTags>
+            <li>CWE_Ammo_Powder</li>
+            <li>CWE_BurstFire_L</li>
+            <li>CWE_BurstFire_M</li>
+            <li>CWE_Magazine_L_Powder</li>
+            <li>CWE_Magazine_M_Powder</li>
+            <li>CWE_Magazine_S_Powder</li>
+            <li>CWE_Sights_M</li>
+            <li>CWE_Sights_S</li>
+            <li>CWE_Underbarrel_L</li>
+            <li>CWE_Underbarrel_M</li>
+            <li>CWE_Underbarrel_S</li>
+            <li>CWE_Underbarrel_T</li>
+            <li>CWF_BurstFire</li>
+            <li>CWF_Charge</li>
+            <li>CWF_LMG</li>
+        </weaponTags>
+        <comps>
+            <li Class="CWF.CompProperties_AbilityProvider" />
+            <li Class="CWF.CompProperties_DynamicTraits">
+                <supportParts>
+                    <li>Muzzle</li>
+                    <li>Barrel</li>
+                    <li>Receiver</li>
+                    <li>Trigger</li>
+                    <li>Stock</li>
+                    <li>Grip</li>
+                    <li>Sight</li>
+                    <li>Magazine</li>
+                    <li>Underbarrel</li>
+                    <li>Ammo</li>
+                </supportParts>
+            </li>
+            <li Class="CWF.CompProperties_DynamicGraphic">
+                <attachmentPoints>
+                    <li>
+                        <part>Receiver</part>
+                        <baseTexture>
+                            <texturePath>Things/Eccentric/Weapons/L20C_SAW</texturePath>
+                            <offset>(0, 0)</offset>
+                        </baseTexture>
+                        <layer>0</layer>
+                    </li>
+                </attachmentPoints>
+            </li>
+        </comps>
+    </CWF.AdapterDef>
+    <CWF.AdapterDef>
+        <defName>Eccentric_Gun_M5RR</defName>
+        <graphicData>
+            <texPath>Things/Eccentric/Weapons/M5</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <weaponTags>
+            <li>CWE_Launcher</li>
+        </weaponTags>
+        <comps>
+            <li Class="CWF.CompProperties_AbilityProvider" />
+            <li Class="CWF.CompProperties_DynamicTraits">
+                <supportParts>
+                    <li>Trigger</li>
+                    <li>Stock</li>
+                    <li>Grip</li>
+                </supportParts>
+            </li>
+        </comps>
+    </CWF.AdapterDef>
+</Defs>
