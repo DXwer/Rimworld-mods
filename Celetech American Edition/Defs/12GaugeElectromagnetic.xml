@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <ThingCategoryDef>
+		<defName>AmmoCategory_CMC_12Gauge</defName>
+		<label>12 Gauge Electromagnetic</label>
+		<parent>AmmoAdvanced</parent>
+		<iconPath>UI/Icons/ThingCategories/CaliberCharge</iconPath>
+	</ThingCategoryDef>
+
+	<!-- ==================== AmmoSet ========================== -->
+
+	<CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_CMC_12Gauge</defName>
+		<label>12 Gauge Electromagnetic</label>
+		<ammoTypes>
+			<Ammo_12GaugeElectromagnetic_AP>Bullet_12GaugeElectromagnetic_AP</Ammo_12GaugeElectromagnetic_AP>
+			<Ammo_12GaugeElectromagnetic_Ion>Bullet_12GaugeElectromagnetic_Ion</Ammo_12GaugeElectromagnetic_Ion>
+		</ammoTypes>
+		<similarTo>AmmoSet_ChargedShotgun</similarTo>
+	</CombatExtended.AmmoSetDef>
+
+	<!-- ==================== Ammo ========================== -->
+
+	<ThingDef Class="CombatExtended.AmmoDef" Name="12GaugeCMCBase" ParentName="SpacerAmmoBase" Abstract="True">
+		<description>Electromagnetic multi-shot cartridge designed for shotgun-type weapons.</description>
+		<statBases>
+			<Mass>0.047</Mass>
+			<Bulk>0.06</Bulk>
+		</statBases>
+		<tradeTags>
+			<li>CE_AutoEnableTrade</li>
+			<li>CE_AutoEnableCrafting_FabricationBench</li>
+		</tradeTags>
+		<thingCategories>
+			<li>AmmoCategory_CMC_12Gauge</li>
+		</thingCategories>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="12GaugeCMCBase">
+		<defName>Ammo_12GaugeElectromagnetic_AP</defName>
+		<label>12 Gauge Electromagnetic (AP)</label>
+		<graphicData>
+			<texPath>Things/Ammo/Charged/ShotgunRegular</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<ammoClass>CMC_EMBullet_AP</ammoClass>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="12GaugeCMCBase">
+		<defName>Ammo_12GaugeElectromagnetic_Ion</defName>
+		<label>12 Gauge Electromagnetic (Ion)</label>
+		<graphicData>
+			<texPath>Things/Ammo/Charged/ShotgunIon</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<ammoClass>CMC_EMBullet_Ion</ammoClass>
+		<generateAllowChance>0.4</generateAllowChance>
+	</ThingDef>
+
+	<!-- ================== Projectiles ================== -->
+
+	<ThingDef Name="Base12GaugeCMCBullet" ParentName="BaseBulletCE" Abstract="true">
+		<graphicData>
+			<texPath>Things/Projectile/Charged/ChargeShot</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Bullet</damageDef>
+			<speed>154</speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="Base12GaugeCMCBullet">
+		<defName>Bullet_12GaugeElectromagnetic_AP</defName>
+		<label>12 Gauge Electromagnetic projectile (AP)</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageAmountBase>10</damageAmountBase>
+			<secondaryDamage>
+				<li>
+					<def>Bomb_Secondary</def>
+					<amount>3</amount>
+				</li>
+			</secondaryDamage>
+			<armorPenetrationSharp>20</armorPenetrationSharp>
+			<armorPenetrationBlunt>12</armorPenetrationBlunt>
+			<pelletCount>12</pelletCount>
+			<spreadMult>7.9</spreadMult>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="Base12GaugeCMCBullet">
+		<defName>Bullet_12GaugeElectromagnetic_Ion</defName>
+		<label>12 Gauge Electromagnetic projectile (Ion)</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageAmountBase>10</damageAmountBase>
+			<secondaryDamage>
+				<li>
+					<def>EMP</def>
+					<amount>3</amount>
+				</li>
+			</secondaryDamage>
+			<armorPenetrationSharp>20</armorPenetrationSharp>
+			<armorPenetrationBlunt>12</armorPenetrationBlunt>
+			<pelletCount>12</pelletCount>
+			<spreadMult>7.9</spreadMult>
+			<empShieldBreakChance>1</empShieldBreakChance>
+		</projectile>
+	</ThingDef>
+
+	<!-- ==================== Recipes ========================== -->
+
+	<RecipeDef ParentName="ChargeAmmoRecipeBase">
+		<defName>MakeAmmo_12GaugeElectromagnetic_AP</defName>
+		<label>make 12 Gauge Electromagnetic (AP) shell x200</label>
+		<description>Craft 200 12 Gauge Electromagnetic (AP) shells.</description>
+		<jobString>Making 12 Gauge Electromagnetic (AP) shells.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Uranium</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentSpacer</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Plasteel</li>
+				<li>Uranium</li>
+				<li>ComponentSpacer</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_12GaugeElectromagnetic_AP>200</Ammo_12GaugeElectromagnetic_AP>
+		</products>
+		<workAmount>6600</workAmount>
+	</RecipeDef>
+
+	<RecipeDef ParentName="ChargeAmmoRecipeBase">
+		<defName>MakeAmmo_12GaugeElectromagnetic_Ion</defName>
+		<label>make 12 Gauge Electromagnetic (Ion) shell x200</label>
+		<description>Craft 200 12 Gauge Electromagnetic (Ion) shells.</description>
+		<jobString>Making 12 Gauge Electromagnetic (Ion) shells.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Uranium</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentSpacer</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Plasteel</li>
+				<li>Uranium</li>
+				<li>ComponentSpacer</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_12GaugeElectromagnetic_Ion>200</Ammo_12GaugeElectromagnetic_Ion>
+		</products>
+		<workAmount>7200</workAmount>
+	</RecipeDef>
+
+</Defs>

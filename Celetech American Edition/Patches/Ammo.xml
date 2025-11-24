@@ -1,0 +1,834 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+    <!-- ============== Ammo ============== -->
+    
+    <!-- 4x20mm EM -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingCategoryDef[defName="AmmoCategory_CMC_4x20mmAmmo"]/parent</xpath>
+        <value>
+            <parent>AmmoAdvanced</parent>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[@Name="Ammo_CMC_4x20mmAmmo_Base"]/description</xpath>
+        <value>
+            <description>Low caliber electromagnetic rail cartridge for pistols and PDWs.</description>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Ammo_CMC_4x20mmAmmo_Regular"]/label</xpath>
+        <value>
+            <label>4x20mm Electromagnetic</label>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/RecipeDef[defName="MakeAmmo_CMC_4x20mmAmmo_Regular"]/label</xpath>
+        <value>
+            <label>make 4x20mm Electromagnetic cartridge x500</label>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/RecipeDef[defName="MakeAmmo_CMC_4x20mmAmmo_Regular"]/description</xpath>
+        <value>
+            <description>Craft 500 4x20mm Electromagnetic cartridges.</description>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/RecipeDef[defName="MakeAmmo_CMC_4x20mmAmmo_Regular"]/jobString</xpath>
+        <value>
+            <jobString>Making 4x20mm Electromagnetic cartridges.</jobString>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Bullet_CMC_4x20mmAmmo_Regular"]/projectile/damageAmountBase</xpath>
+        <value>
+            <damageAmountBase>12</damageAmountBase>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Bullet_CMC_4x20mmAmmo_Regular"]/projectile/secondaryDamage</xpath>
+        <value>
+            <secondaryDamage>
+                <li>
+                    <def>Bomb</def>
+                    <amount>7</amount>
+                </li>
+            </secondaryDamage>
+        </value>
+    </Operation>
+
+    <!-- 4x20mm EMS -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingCategoryDef[defName="AmmoCategory_CMC_4x20mmsmartAmmo"]/label</xpath>
+        <value>
+            <label>4x20mm Electromagnetic-Smart</label>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingCategoryDef[defName="AmmoCategory_CMC_4x20mmsmartAmmo"]/parent</xpath>
+        <value>
+            <parent>AmmoAdvanced</parent>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_CMC_4x20mmsmartAmmo"]/label</xpath>
+        <value>
+            <label>4x20mm Electromagnetic-Smart</label>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[@Name="Ammo_CMC_4x20mmsmartAmmo_Base"]/description</xpath>
+        <value>
+            <description>Low caliber guided rail cartridge for smart pistols and PDWs.</description>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Ammo_CMC_4x20mmsmartAmmo_Regular"]/label</xpath>
+        <value>
+            <label>4x20mm Electromagnetic-Smart</label>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/RecipeDef[defName="MakeAmmo_CMC_4x20mmsmartAmmo_Regular"]/label</xpath>
+        <value>
+            <label>make 4x20mm Electromagnetic-Smart cartridge x500</label>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/RecipeDef[defName="MakeAmmo_CMC_4x20mmsmartAmmo_Regular"]/description</xpath>
+        <value>
+            <description>Craft 500 4x20mm Electromagnetic-Smart cartridges.</description>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/RecipeDef[defName="MakeAmmo_CMC_4x20mmsmartAmmo_Regular"]/jobString</xpath>
+        <value>
+            <jobString>Making 4x20mm Electromagnetic-Smart cartridges.</jobString>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Bullet_CMC_4x20mmsmartAmmo_Regular"]/projectile/damageAmountBase</xpath>
+        <value>
+            <damageAmountBase>14</damageAmountBase>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Bullet_CMC_4x20mmsmartAmmo_Regular"]/projectile/secondaryDamage</xpath>
+        <value>
+            <secondaryDamage>
+                <li>
+                    <def>Bomb</def>
+                    <amount>6</amount>
+                </li>
+            </secondaryDamage>
+        </value>
+    </Operation>
+
+    <!-- 6x36mm EM -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[@Name="6x36mmElectromagneticBase"]/description</xpath>
+        <value>
+            <description>Electromagnetic rail cartridge for infantry rifles.</description>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Bullet_6x36mmElectromagnetic_AP"]/projectile/damageAmountBase</xpath>
+        <value>
+            <damageAmountBase>18</damageAmountBase>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Bullet_6x36mmElectromagnetic_AP"]/projectile/secondaryDamage</xpath>
+        <value>
+            <secondaryDamage>
+                <li>
+                    <def>Bomb_Secondary</def>
+                    <amount>8</amount>
+                </li>
+            </secondaryDamage>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Bullet_6x36mmElectromagnetic_Ion"]/projectile/damageAmountBase</xpath>
+        <value>
+            <damageAmountBase>18</damageAmountBase>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Bullet_6x36mmElectromagnetic_Ion"]/projectile/secondaryDamage</xpath>
+        <value>
+            <secondaryDamage>
+                <li>
+                    <def>EMP</def>
+                    <amount>8</amount>
+                </li>
+            </secondaryDamage>
+        </value>
+    </Operation>
+
+    <!-- 6x36mm EMS -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingCategoryDef[defName="Ammo6x36mmElectromagneticSmart"]/label</xpath>
+        <value>
+            <label>6x36mm Electromagnetic-Smart</label>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_6x36mmElectromagneticS"]/label</xpath>
+        <value>
+            <label>6x36mm Electromagnetic-Smart</label>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[@Name="6x36mmElectromagneticSmartBase"]/description</xpath>
+        <value>
+            <description>Guided rail cartridge for smart infantry rifles.</description>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Bullet_6x36mmElectromagneticS_AP"]/projectile/damageAmountBase</xpath>
+        <value>
+            <damageAmountBase>20</damageAmountBase>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Bullet_6x36mmElectromagneticS_AP"]/projectile/secondaryDamage</xpath>
+        <value>
+            <secondaryDamage>
+                <li>
+                    <def>Bomb_Secondary</def>
+                    <amount>5</amount>
+                </li>
+            </secondaryDamage>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Bullet_6x36mmElectromagneticS_Ion"]/projectile/damageAmountBase</xpath>
+        <value>
+            <damageAmountBase>20</damageAmountBase>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Bullet_6x36mmElectromagneticS_Ion"]/projectile/secondaryDamage</xpath>
+        <value>
+            <secondaryDamage>
+                <li>
+                    <def>EMP</def>
+                    <amount>5</amount>
+                </li>
+            </secondaryDamage>
+        </value>
+    </Operation>
+
+    <!-- 8x50mm EM -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingCategoryDef[defName="Ammo8x50mmElectromagnetic"]/label</xpath>
+        <value>
+            <label>8x50mm Electromagnetic</label>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[@Name="8x50mmElectromagneticBase"]/description</xpath>
+        <value>
+            <description>High caliber electromagnetic rail cartridge for precision rifles.</description>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Bullet_8x50mmElectromagnetic_AP"]/projectile/damageAmountBase</xpath>
+        <value>
+            <damageAmountBase>28</damageAmountBase>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Bullet_8x50mmElectromagnetic_AP"]/projectile/secondaryDamage</xpath>
+        <value>
+            <secondaryDamage>
+                <li>
+                    <def>Bomb_Secondary</def>
+                    <amount>16</amount>
+                </li>
+            </secondaryDamage>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Bullet_8x50mmElectromagnetic_Ion"]/projectile/damageAmountBase</xpath>
+        <value>
+            <damageAmountBase>28</damageAmountBase>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Bullet_8x50mmElectromagnetic_Ion"]/projectile/secondaryDamage</xpath>
+        <value>
+            <secondaryDamage>
+                <li>
+                    <def>EMP</def>
+                    <amount>16</amount>
+                </li>
+            </secondaryDamage>
+        </value>
+    </Operation>
+
+    <!-- 8x50mm EMS -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingCategoryDef[defName="AmmoCategory_8x50mmMTSmart"]/label</xpath>
+        <value>
+            <label>8x50mm Electromagnetic-Smart</label>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_6x36mmElectromagneticS"]/label</xpath>
+        <value>
+            <label>8x50mm Electromagnetic-Smart</label>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[@Name="Ammo_8x50mmMTSmart_Base"]/description</xpath>
+        <value>
+            <description>High caliber guided rail cartridge for smart precision rifles.</description>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Ammo_8x50mmMTSmart_Regular"]/label</xpath>
+        <value>
+            <label>8x50mm Electromagnetic-Smart</label>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Bullet_8x50mmMTSmart_Regular"]/projectile/damageAmountBase</xpath>
+        <value>
+            <damageAmountBase>32</damageAmountBase>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Bullet_8x50mmMTSmart_Regular"]/projectile/secondaryDamage</xpath>
+        <value>
+            <secondaryDamage>
+                <li>
+                    <def>EMP</def>
+                    <amount>15</amount>
+                </li>
+            </secondaryDamage>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/RecipeDef[defName="MakeAmmo_8x50mmMTSmart_Regular"]/label</xpath>
+        <value>
+            <label>make 8x50mm Electromagnetic-Smart cartridge x200</label>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/RecipeDef[defName="MakeAmmo_8x50mmMTSmart_Regular"]/description</xpath>
+        <value>
+            <description>Craft 200 8x50mm Electromagnetic-Smart cartridges.</description>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/RecipeDef[defName="MakeAmmo_8x50mmMTSmart_Regular"]/jobString</xpath>
+        <value>
+            <jobString>Making 8x50mm Electromagnetic-Smart cartridges.</jobString>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Ammo_8x50mmMTSmart_HE"]/label</xpath>
+        <value>
+            <label>8x50mm MTS-HE</label>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Bullet_8x50mmMTSmart_HE"]/projectile/damageAmountBase</xpath>
+        <value>
+            <damageAmountBase>27</damageAmountBase>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/RecipeDef[defName="MakeAmmo_8x50mmMTSmart_HE"]/label</xpath>
+        <value>
+            <label>make 8x50mm MTS-HE cartridge x200</label>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/RecipeDef[defName="MakeAmmo_8x50mmMTSmart_HE"]/description</xpath>
+        <value>
+            <description>Craft 200 8x50mm MTS-HE cartridges.</description>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/RecipeDef[defName="MakeAmmo_8x50mmMTSmart_HE"]/jobString</xpath>
+        <value>
+            <jobString>Making 8x50mm MTS-HE cartridges.</jobString>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Ammo_8x50mmMTSmart_ATB"]/label</xpath>
+        <value>
+            <label>8x50mm MTS-ATB</label>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/RecipeDef[defName="MakeAmmo_8x50mmMTSmart_ATB"]/label</xpath>
+        <value>
+            <label>make 8x50mm MTS-ATB cartridge x50</label>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/RecipeDef[defName="MakeAmmo_8x50mmMTSmart_ATB"]/description</xpath>
+        <value>
+            <description>Craft 50 8x50mm MTS-ATB cartridges.</description>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/RecipeDef[defName="MakeAmmo_8x50mmMTSmart_ATB"]/jobString</xpath>
+        <value>
+            <jobString>Making 8x50mm MTS-ATB cartridges.</jobString>
+        </value>
+    </Operation>
+
+    <!-- 12x65mm HPV -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingCategoryDef[defName="AmmoCategory_CMC_12x65mmSmart"]/label</xpath>
+        <value>
+            <label>12x65mm HPV-MTS</label>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_CMC_12x65mmSmart"]/label</xpath>
+        <value>
+            <label>12x65mm HPV-MTS</label>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[@Name="Ammo_CMC_12x65mmSmart_Base"]/description</xpath>
+        <value>
+            <description>Advanced hypervelocity guided rail cartridge with exotic payload.</description>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Ammo_CMC_12x65mmSmart_Regular"]/label</xpath>
+        <value>
+            <label>12x65mm HPV-MTS</label>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Bullet_CMC_12x65mmSmart_Regular"]/projectile/damageAmountBase</xpath>
+        <value>
+            <damageAmountBase>36</damageAmountBase>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Bullet_CMC_12x65mmSmart_Regular"]/projectile/secondaryDamage</xpath>
+        <value>
+            <secondaryDamage>
+                <li>
+                    <def>EMP</def>
+                    <amount>15</amount>
+                </li>
+                <li>
+                    <def>AntiEntropyBullet</def>
+                    <amount>48</amount>
+                </li>
+            </secondaryDamage>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/RecipeDef[defName="MakeAmmo_CMC_12x65mmSmart_Regular"]/label</xpath>
+        <value>
+            <label>make 12x65mm HPV-MTS cartridge x100</label>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/RecipeDef[defName="MakeAmmo_CMC_12x65mmSmart_Regular"]/description</xpath>
+        <value>
+            <description>Craft 100 12x65mm HPV-MTS cartridges.</description>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/RecipeDef[defName="MakeAmmo_CMC_12x65mmSmart_Regular"]/jobString</xpath>
+        <value>
+            <jobString>Making 12x65mm HPV-MTS cartridges.</jobString>
+        </value>
+    </Operation>
+
+    <!-- 12x80mm HPV -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingCategoryDef[defName="AmmoCategory_CMC_12x80mmSmart"]/label</xpath>
+        <value>
+            <label>12x80mm HPV</label>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_CMC_12x80mmSmart"]/label</xpath>
+        <value>
+            <label>12x80mm HPV</label>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[@Name="Ammo_CMC_12x80mmSmart_Base"]/description</xpath>
+        <value>
+            <description>Heavy hypervelocity guided rail cartridge for anti-materiel use.</description>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Ammo_CMC_12x80mmSmart_Regular"]/label</xpath>
+        <value>
+            <label>12x80mm HPV</label>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Bullet_CMC_12x80mmSmart_Regular"]/projectile/damageAmountBase</xpath>
+        <value>
+            <damageAmountBase>48</damageAmountBase>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Bullet_CMC_12x80mmSmart_Regular"]/projectile/secondaryDamage</xpath>
+        <value>
+            <secondaryDamage>
+                <li>
+                    <def>EMP</def>
+                    <amount>28</amount>
+                </li>
+                <li>
+                    <def>Bomb</def>
+                    <amount>20</amount>
+                </li>
+            </secondaryDamage>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/RecipeDef[defName="MakeAmmo_CMC_12x80mmSmart_Regular"]/label</xpath>
+        <value>
+            <label>make 12x80mm HPV cartridge x100</label>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/RecipeDef[defName="MakeAmmo_CMC_12x80mmSmart_Regular"]/description</xpath>
+        <value>
+            <description>Craft 100 12x80mm HPV cartridges.</description>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/RecipeDef[defName="MakeAmmo_CMC_12x80mmSmart_Regular"]/jobString</xpath>
+        <value>
+            <jobString>Making 12x80mm HPV cartridges.</jobString>
+        </value>
+    </Operation>
+
+    <!-- 30x114mm -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[@Name="Ammo_CMC_30x114mm_Base"]/description</xpath>
+        <value>
+            <description>Electromagnetic rail shell for rotary cannons.</description>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Bullet_CMC_30x114mm_APDS"]/projectile/damageAmountBase</xpath>
+        <value>
+            <damageAmountBase>64</damageAmountBase>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Bullet_CMC_30x114mm_APDS"]/projectile/secondaryDamage</xpath>
+        <value>
+            <secondaryDamage>
+                <li>
+                    <def>EMP</def>
+                    <amount>36</amount>
+                </li>
+            </secondaryDamage>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/RecipeDef[defName="MakeAmmo_CMC_30x114mm_APDS"]/label</xpath>
+        <value>
+            <label>make 30x114mm Electromagnetic APDS cartridge x500</label>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/RecipeDef[defName="MakeAmmo_CMC_30x114mm_APDS"]/description</xpath>
+        <value>
+            <description>Craft 500 30x114mm Electromagnetic APDS cartridges.</description>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/RecipeDef[defName="MakeAmmo_CMC_30x114mm_APDS"]/jobString</xpath>
+        <value>
+            <jobString>Making 30x114mm Electromagnetic APDS cartridges.</jobString>
+        </value>
+    </Operation>
+
+    <!-- 45x50mm MTPG -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[@Name="Ammo_Ammo_45x50mmMTPG_Base"]/description</xpath>
+        <value>
+            <description>Multi-Target Projectile grenades for infantry launchers.</description>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Ammo_Ammo_45x50mmMTPG_HE"]/label</xpath>
+        <value>
+            <label>45x50mm MTP HE</label>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/RecipeDef[defName="MakeAmmo_Ammo_45x50mmMTPG_HE"]/label</xpath>
+        <value>
+            <label>make 45x50mm MTP HE grenades x50</label>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/RecipeDef[defName="MakeAmmo_Ammo_45x50mmMTPG_HE"]/description</xpath>
+        <value>
+            <description>Craft 50 45x50mm MTP HE grenades.</description>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/RecipeDef[defName="MakeAmmo_Ammo_45x50mmMTPG_HE"]/jobString</xpath>
+        <value>
+            <jobString>Making 45x50mm MTP HE grenades.</jobString>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Ammo_Ammo_45x50mmMTPG_S"]/label</xpath>
+        <value>
+            <label>45x50mm MTP SMK</label>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/RecipeDef[defName="MakeAmmo_Ammo_45x50mmMTPG_S"]/label</xpath>
+        <value>
+            <label>make 45x50mm MTP SMK grenades x50</label>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/RecipeDef[defName="MakeAmmo_Ammo_45x50mmMTPG_S"]/description</xpath>
+        <value>
+            <description>Craft 50 45x50mm MTP SMK grenades.</description>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/RecipeDef[defName="MakeAmmo_Ammo_45x50mmMTPG_S"]/jobString</xpath>
+        <value>
+            <jobString>Making 45x50mm MTP SMK grenades.</jobString>
+        </value>
+    </Operation>
+
+    <!-- 45x250mm -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[@Name="Ammo_CMC_Ammo_45x250mm_Base"]/description</xpath>
+        <value>
+            <description>Heavy electromagnetic rail shell for autocannons.</description>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Ammo_CMC_Ammo_45x250mm_HE"]/label</xpath>
+        <value>
+            <label>45x250mm HE</label>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Bullet_CMC_Ammo_45x250mm_HE"]/projectile/damageAmountBase</xpath>
+        <value>
+            <damageAmountBase>84</damageAmountBase>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Bullet_CMC_Ammo_45x250mm_HE"]/projectile/explosionRadius</xpath>
+        <value>
+            <explosionRadius>3.4</explosionRadius>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/RecipeDef[defName="MakeAmmo_CMC_Ammo_45x250mm_HE"]/label</xpath>
+        <value>
+            <label>make 45x250mm HE cartridges x100</label>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/RecipeDef[defName="MakeAmmo_CMC_Ammo_45x250mm_HE"]/description</xpath>
+        <value>
+            <description>Craft 100 45x250mm HE cartridges.</description>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/RecipeDef[defName="MakeAmmo_CMC_Ammo_45x250mm_HE"]/jobString</xpath>
+        <value>
+            <jobString>Making 45x250mm HE cartridges.</jobString>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Ammo_CMC_Ammo_45x250mm_APDS"]/label</xpath>
+        <value>
+            <label>45x250mm APDS-EMP</label>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Bullet_CMC_Ammo_45x250mm_APDS"]/projectile/damageAmountBase</xpath>
+        <value>
+            <damageAmountBase>120</damageAmountBase>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Bullet_CMC_Ammo_45x250mm_APDS"]/projectile/secondaryDamage</xpath>
+        <value>
+            <secondaryDamage>
+                <li>
+                    <def>EMP</def>
+                    <amount>54</amount>
+                </li>
+            </secondaryDamage>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/RecipeDef[defName="MakeAmmo_CMC_Ammo_45x250mm_APDS-EMP"]/label</xpath>
+        <value>
+            <label>make 45x250mm APDS-EMP cartridges x500</label>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/RecipeDef[defName="MakeAmmo_CMC_Ammo_45x250mm_APDS-EMP"]/description</xpath>
+        <value>
+            <description>Craft 500 45x250mm APDS-EMP cartridges.</description>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/RecipeDef[defName="MakeAmmo_CMC_Ammo_45x250mm_APDS-EMP"]/jobString</xpath>
+        <value>
+            <jobString>Making 45x250mm APDS-EMP cartridges.</jobString>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/RecipeDef[defName="MakeAmmo_CMC_Ammo_45x250mm_APDS-EMP"]/ingredients</xpath>
+        <value>
+            <ingredients>
+                <li>
+                    <filter>
+                        <thingDefs>
+                            <li>Uranium</li>
+                        </thingDefs>
+                    </filter>
+                    <count>40</count>
+                </li>
+                <li>
+                    <filter>
+                        <thingDefs>
+                            <li>Plasteel</li>
+                        </thingDefs>
+                    </filter>
+                    <count>80</count>
+                </li>
+                <li>
+                    <filter>
+                        <thingDefs>
+                            <li>ComponentSpacer</li>
+                        </thingDefs>
+                    </filter>
+                    <count>18</count>
+                </li>
+            </ingredients>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/RecipeDef[defName="MakeAmmo_CMC_Ammo_45x250mm_APDS-EMP"]/fixedIngredientFilter</xpath>
+        <value>
+            <fixedIngredientFilter>
+                <thingDefs>
+                    <li>Uranium</li>
+                    <li>Plasteel</li>
+                    <li>ComponentSpacer</li>
+                </thingDefs>
+            </fixedIngredientFilter>
+        </value>
+    </Operation>
+    
+</Patch>

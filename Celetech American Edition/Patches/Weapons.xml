@@ -1,0 +1,798 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+    <!-- EM51 rail rifle (QBZ-59) -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="QBZ_fivenine"]/label</xpath>
+        <value>
+            <label>EM51 rail rifle</label>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="QBZ_fivenine"]/description</xpath>
+        <value>
+            <description>The EM51 is an infantry rifle chambered for the 6x36mm electromagnetic rail cartridge. With conventional controls and a moderately high rate of fire, it delivers good performance at most combat ranges.</description>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="QBZ_fivenine"]/verbs/li[@Class="CombatExtended.VerbPropertiesCE"]/range</xpath>
+        <value>
+            <range>75</range>
+        </value>
+    </Operation>
+
+    <!-- EM54B rail SAW (QBB-59) -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="QBB_fivenine"]/label</xpath>
+        <value>
+            <label>EM54B rail SAW</label>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="QBB_fivenine"]/description</xpath>
+        <value>
+            <description>The EM54B is an infantry light machine gun chambered for the 6x36mm electromagnetic rail cartridge. With its long belts and high rate of fire, it is designed to deliver a high volume of suppressive fire.</description>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="QBB_fivenine"]/verbs/li[@Class="CombatExtended.VerbPropertiesCE"]/range</xpath>
+        <value>
+            <range>75</range>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="QBB_fivenine"]/comps/li[@Class="CombatExtended.CompProperties_AmmoUser"]/magazineSize</xpath>
+        <value>
+            <magazineSize>250</magazineSize>
+        </value>
+    </Operation>
+
+    <!-- EM51L rail SDMR (QBU-59) -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="QBU_fivenine"]/label</xpath>
+        <value>
+            <label>EM51L rail SDMR</label>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="QBU_fivenine"]/description</xpath>
+        <value>
+            <description>The EM51L is a accurized modification of the standard EM51 rail rifle, chambered for the same 6x36mm rail cartridge. It is designed to deliver accurate fire against single targets at the limits of rifle range, but can be used as a regular rifle if required.</description>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="QBU_fivenine"]/verbs/li[@Class="CombatExtended.VerbPropertiesCE"]/range</xpath>
+        <value>
+            <range>80</range>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="QBU_fivenine"]/comps/li[@Class="CombatExtended.CompProperties_AmmoUser"]/magazineSize</xpath>
+        <value>
+            <magazineSize>30</magazineSize>
+        </value>
+    </Operation>
+
+    <!-- EM48 rail rifle (QBZ-95C AR or 3ooE) -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="QBZ_threeooE"]/label</xpath>
+        <value>
+            <label>EM48 rail rifle</label>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="QBZ_threeooE"]/description</xpath>
+        <value>
+            <description>The EM48 is an older infantry rifle, chambered for the 6x36mm electromagnetic rail cartridge. Compared to the newer EM51, it is easier to control but has a slower rate of fire.</description>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="QBZ_threeooE"]/statBases/SwayFactor</xpath>
+        <value>
+            <SwayFactor>0.95</SwayFactor>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="QBZ_threeooE"]/verbs/li[@Class="CombatExtended.VerbPropertiesCE"]/ticksBetweenBurstShots</xpath>
+        <value>
+            <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="QBZ_threeooE"]/verbs/li[@Class="CombatExtended.VerbPropertiesCE"]/range</xpath>
+        <value>
+            <range>75</range>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="QBZ_threeooE"]/verbs/li[@Class="CombatExtended.VerbPropertiesCE"]/recoilAmount</xpath>
+        <value>
+            <recoilAmount>0.8</recoilAmount>
+        </value>
+    </Operation>
+
+    <!-- EM48B rail LSW (QBB-95C LMG or 3oo) -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="QBB_threeoo"]/label</xpath>
+        <value>
+            <label>EM48B rail LSW</label>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="QBB_threeoo"]/description</xpath>
+        <value>
+            <description>The EM48B is a modification of the EM48 with an extended casket magazine and heavy barrel to support extended firing. Like the EM48, it trades the high rate of fire and long belts of the EM54B for a more accurate and stable platform.</description>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="QBB_threeoo"]/statBases/SwayFactor</xpath>
+        <value>
+            <SwayFactor>0.95</SwayFactor>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="QBB_threeoo"]/verbs/li[@Class="CombatExtended.VerbPropertiesCE"]/ticksBetweenBurstShots</xpath>
+        <value>
+            <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="QBB_threeoo"]/verbs/li[@Class="CombatExtended.VerbPropertiesCE"]/range</xpath>
+        <value>
+            <range>75</range>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="QBB_threeoo"]/verbs/li[@Class="CombatExtended.VerbPropertiesCE"]/recoilAmount</xpath>
+        <value>
+            <recoilAmount>0.7</recoilAmount>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="QBB_threeoo"]/comps/li[@Class="CombatExtended.CompProperties_AmmoUser"]/magazineSize</xpath>
+        <value>
+            <magazineSize>75</magazineSize>
+        </value>
+    </Operation>
+
+    <!-- EM51S smart rail rifle (QBZ-76 or eightfiveAR) -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="QBZ_eightfiveAR"]/label</xpath>
+        <value>
+            <label>EM51S smart rail rifle</label>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="QBZ_eightfiveAR"]/description</xpath>
+        <value>
+            <description>The EM51S is an infantry rifle chambered for the guided 6x36mm electromagnetic rail cartridge. Compared to the standard EM51, the guided cartridge delivers greater soft target damage but suffers against armor.</description>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="QBZ_eightfiveAR"]/verbs/li[@Class="CombatExtended.VerbPropertiesCE"]/range</xpath>
+        <value>
+            <range>75</range>
+        </value>
+    </Operation>
+
+    <!-- EM24 rail PDW (QSZ-57) -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="CMC_QSZfiveseven"]/label</xpath>
+        <value>
+            <label>EM24 rail PDW</label>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="CMC_QSZfiveseven"]/description</xpath>
+        <value>
+            <description>The EM24 is a compact PDW chambered for the 4x20mm electromagnetic rail cartridge. With a high rate of fire and large magazine, it is an excellent defensive weapon at close range.</description>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="CMC_QSZfiveseven"]/verbs/li[@Class="CombatExtended.VerbPropertiesCE"]/range</xpath>
+        <value>
+            <range>62</range>
+        </value>
+    </Operation>
+
+    <!-- EM24D rail PDW (QSZ-57NL) -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="CMC_QSZfiveseven_NL"]/label</xpath>
+        <value>
+            <label>EM24D rail PDW</label>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="CMC_QSZfiveseven_NL"]/description</xpath>
+        <value>
+            <description>The EM24D is a modification of the standard EM24 with an improved fire control system. It is slightly heavier and harder to handle, but delivers better accuracy at all ranges.</description>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="CMC_QSZfiveseven_NL"]/verbs/li[@Class="CombatExtended.VerbPropertiesCE"]/range</xpath>
+        <value>
+            <range>62</range>
+        </value>
+    </Operation>
+
+    <!-- EM24L rail PDW (QSZ-57MODIII) -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="CMC_QSZfiveseven_MODIII"]/label</xpath>
+        <value>
+            <label>EM24L rail carbine</label>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="CMC_QSZfiveseven_MODIII"]/description</xpath>
+        <value>
+            <description>The EM24L is a conversion of the EM24 PDW into a light carbine. Rebuilt as a carbine, it is larger and heavier, but is also more accurate, more stable, and has a higher rate of fire for offensive use.</description>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="CMC_QSZfiveseven_MODIII"]/verbs/li[@Class="CombatExtended.VerbPropertiesCE"]/range</xpath>
+        <value>
+            <range>62</range>
+        </value>
+    </Operation>
+
+    <!-- EM18 rail pistol (QSZ-58) -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="CMC_QSZfiveeight"]/label</xpath>
+        <value>
+            <label>EM18 rail pistol</label>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="CMC_QSZfiveeight"]/description</xpath>
+        <value>
+            <description>The EM18 is a large frame pistol chambered for the 4x20mm electromagnetic rail cartridge. Largely inferior to the EM24 series PDWs, it is mainly intended for use as a backup for a heavier weapon, rather than as a primary means of self defense.</description>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="CMC_QSZfiveeight"]/verbs/li[@Class="CombatExtended.VerbPropertiesCE"]/defaultProjectile</xpath>
+        <value>
+            <defaultProjectile>Bullet_CMC_4x20mmAmmo_Regular</defaultProjectile>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="CMC_QSZfiveeight"]/verbs/li[@Class="CombatExtended.VerbPropertiesCE"]/range</xpath>
+        <value>
+            <range>48</range>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="CMC_QSZfiveeight"]/comps/li[@Class="CombatExtended.CompProperties_AmmoUser"]/magazineSize</xpath>
+        <value>
+            <magazineSize>20</magazineSize>
+        </value>
+    </Operation>
+
+    <!-- EM24S smart rail PDW (QBZ85XWJ) -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="QBZS85XWJ"]/label</xpath>
+        <value>
+            <label>EM24S smart rail PDW</label>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="QBZS85XWJ"]/description</xpath>
+        <value>
+            <description>The EM24S is a rail PDW chambered for the guided 4x20mm electromagnetic rail cartridge. The guided cartridge requires a lower rate of fire and has less penetration, but does provide enhanced effect against soft targets.</description>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="QBZS85XWJ"]/verbs/li[@Class="CombatExtended.VerbPropertiesCE"]/range</xpath>
+        <value>
+            <range>62</range>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="QBZS85XWJ"]/verbs/li[@Class="CombatExtended.VerbPropertiesCE"]/ticksBetweenBurstShots</xpath>
+        <value>
+            <ticksBetweenBurstShots>3</ticksBetweenBurstShots>
+        </value>
+    </Operation>
+
+    <!-- EM24SX smart rail PDW (QSZ-85M) -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="QSZ85_M"]/label</xpath>
+        <value>
+            <label>EM24SX smart rail PDW</label>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="QSZ85_M"]/description</xpath>
+        <value>
+            <description>The EM24SX is an upgrade to the EM24S that improves the fire control system to handle a higher rate of fire. In an effort to maintain the weight and size of the weapon, the standard magazines have had their capacity reduced somewhat.</description>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="QSZ85_M"]/verbs/li[@Class="CombatExtended.VerbPropertiesCE"]/range</xpath>
+        <value>
+            <range>62</range>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="QSZ85_M"]/verbs/li[@Class="CombatExtended.VerbPropertiesCE"]/ticksBetweenBurstShots</xpath>
+        <value>
+            <ticksBetweenBurstShots>2</ticksBetweenBurstShots>
+        </value>
+    </Operation>
+
+    <!-- EM18S smart rail pistol (QSZ-58smart) -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="CMC_QSZfiveeightSmart"]/label</xpath>
+        <value>
+            <label>EM18S smart rail pistol</label>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="CMC_QSZfiveeightSmart"]/description</xpath>
+        <value>
+            <description>The EM18S is an upgrade to the standard EM18, designed to fire the guided 4x20mm electromagnetic rail cartridge. The fire control system increases the weight dramatically, but the guided cartridge delivers better effect against soft targets.</description>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="CMC_QSZfiveeightSmart"]/verbs/li[@Class="CombatExtended.VerbPropertiesCE"]/range</xpath>
+        <value>
+            <range>48</range>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="CMC_QSZfiveeightSmart"]/comps/li[@Class="CombatExtended.CompProperties_AmmoUser"]/magazineSize</xpath>
+        <value>
+            <magazineSize>24</magazineSize>
+        </value>
+    </Operation>
+
+    <!-- EM71 rail sniper rifle (QBU TOOE) -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="QBU_TOOE"]/label</xpath>
+        <value>
+            <label>EM71 rail sniper rifle</label>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="QBU_TOOE"]/description</xpath>
+        <value>
+            <description>The EM71 is an older model sniper rifle chambered for the 8x50mm electromagnetic rail cartridge. Compared to newer rifles, the unguided projectile delivers greater penetration at longer ranges.</description>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="QBU_TOOE"]/comps/li[@Class="CombatExtended.CompProperties_AmmoUser"]/magazineSize</xpath>
+        <value>
+            <magazineSize>10</magazineSize>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationRemove">
+        <xpath>Defs/ThingDef[defName="QBU_TOOE"]/equippedStatOffsets/MoveSpeed</xpath>
+    </Operation>
+
+    <!-- EM71S smart rail sniper rifle (QBUS-85) -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="QBUS85XWJ"]/label</xpath>
+        <value>
+            <label>EM71S smart rail sniper rifle</label>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="QBUS85XWJ"]/description</xpath>
+        <value>
+            <description>The EM71S is a sniper rifle chambered for the guided 8x50mm electromagnetic rail cartridge, delivering extremely high accuracy at extended range with excellent damage and penetration.</description>
+        </value>
+    </Operation>
+
+    <!-- EM71F "Emberclasp" smart rail sniper rifle (QBUS-85F) -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="QBUS85F"]/label</xpath>
+        <value>
+            <label>EM71F "Emberclasp" smart rail sniper rifle</label>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="QBUS85F"]/description</xpath>
+        <value>
+            <description>The EM71F "Emberclasp" is a sniper rifle chambered for the guided 8x50mm electromagnetic rail cartridge. Originally specially designed to fire the 8x50mm MTS-HE cartridge, improvements to the base model have made this variant mostly obsolete, apart from the color scheme.</description>
+        </value>
+    </Operation>
+
+    <!-- EM71X "Nine Tails" smart rail sniper rifle (QBU-71QS) -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="QBU71_QS"]/label</xpath>
+        <value>
+            <label>EM71X "&lt;color=#5BC4E2&gt;&lt;i&gt;Nine Tails&lt;/i&gt;&lt;/color&gt;" smart rail sniper rifle</label>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="QBU71_QS"]/description</xpath>
+        <value>
+            <description>The EM71X "&lt;color=#5BC4E2&gt;&lt;i&gt;Nine Tails&lt;/i&gt;&lt;/color&gt;" is a sniper rifle chambered for the guided 8x50mm electromagnetic rail cartridge. Originally specially designed to fire the 8x50mm MTS-ATB cartridge, improvements to the base model have made this variant mostly obsolete, apart from the color scheme.\n\nThe weapon's nickname comes from its unique rail design, which produces a distinctive impact and wound pattern.</description>
+        </value>
+    </Operation>
+
+    <!-- EM72 smart rail AMR (QBU-71S) -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="CMC_QBU71S"]/label</xpath>
+        <value>
+            <label>EM72 smart rail AMR</label>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="CMC_QBU71S"]/description</xpath>
+        <value>
+            <description>The EM72 is an anti-materiel rifle chambered for the guided 12x80mm electromagnetic rail cartridge. It delivers a heavy, hypervelocity penetrator at extreme range to destroy hardened, high-threat targets with minimal risk.</description>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="CMC_QBU71S"]/comps/li[@Class="CombatExtended.CompProperties_AmmoUser"]/magazineSize</xpath>
+        <value>
+            <magazineSize>10</magazineSize>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationRemove">
+        <xpath>Defs/ThingDef[defName="CMC_QBU71S"]/equippedStatOffsets/MoveSpeed</xpath>
+    </Operation>
+
+    <!-- EM58 rail OICW (QBZ-71QS) -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="QBZ71_QS"]/label</xpath>
+        <value>
+            <label>EM58 rail rifle with EML2 grenade launcher</label>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="QBZ71_QS"]/description</xpath>
+        <value>
+            <description>The EM58 is a heavy battle rifle chambered for the 8x50mm electromagnetic rail cartridge. It features an integrated single-shot EML2 grenade launcher for the 45x50mm Multi-Target Projectile grenade mounted over the barrel, along with fire control for both the rifle and the launcher. The combination is quite heavy and unwieldy.</description>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="QBZ71_QS"]/statBases/Bulk</xpath>
+        <value>
+            <Bulk>9.5</Bulk>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="QBZ71_QS"]/statBases/SwayFactor</xpath>
+        <value>
+            <SwayFactor>1.25</SwayFactor>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="QBZ71_QS"]/verbs/li[@Class="CombatExtended.VerbPropertiesCE"]/range</xpath>
+        <value>
+            <range>80</range>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationRemove">
+        <xpath>Defs/ThingDef[defName="QBZ71_QS"]/equippedStatOffsets/MoveSpeed</xpath>
+    </Operation>
+
+    <!-- EM60 rail OICW (QTS-9) -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="QTS9_OICW"]/label</xpath>
+        <value>
+            <label>EM60 rail rifle with EML8 grenade launcher</label>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="QTS9_OICW"]/description</xpath>
+        <value>
+            <description>The EM60 is a heavy battle rifle chambered for the 8x50mm electromagnetic rail cartridge. It features an integrated, magazine-fed EML8 grenade launcher, firing the 45x50mm Multi-Target Projectile grenade, designed specifically to integrate into the weapon. The combination is heavy and somewhat unwieldly, but is a significant improvement over the EM58.</description>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="QTS9_OICW"]/statBases/Bulk</xpath>
+        <value>
+            <Bulk>8.5</Bulk>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="QTS9_OICW"]/verbs/li[@Class="CombatExtended.VerbPropertiesCE"]/range</xpath>
+        <value>
+            <range>80</range>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationRemove">
+        <xpath>Defs/ThingDef[defName="QTS9_OICW"]/equippedStatOffsets/MoveSpeed</xpath>
+    </Operation>
+
+    <!-- EM40GL rail grenade launcher (CMC Grenade Launcher) -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="CMC_GrenadeLauncher"]/label</xpath>
+        <value>
+            <label>EML40 rail grenade launcher</label>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="CMC_GrenadeLauncher"]/description</xpath>
+        <value>
+            <description>The EML40 is a drum fed grenade launcher chambered for the 45x50mm Multi-Target Projectile grenade. It delivers up to 12 grenades in rapid succession at rifle combat ranges for hard target destruction or battlefield obscurement.</description>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="CMC_GrenadeLauncher"]/verbs/li[@Class="CombatExtended.VerbPropertiesCE"]/range</xpath>
+        <value>
+            <range>80</range>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationRemove">
+        <xpath>Defs/ThingDef[defName="CMC_GrenadeLauncher"]/equippedStatOffsets/MoveSpeed</xpath>
+    </Operation>
+
+    <!-- EM44B smart rail machine gun (W85XWJ) -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="W85XWJ"]/label</xpath>
+        <value>
+            <label>EM44S smart rail machine gun</label>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="W85XWJ"]/description</xpath>
+        <value>
+            <description>The EM44S is a medium machine gun chambered for the guided 8x50mm electromagnetic rail cartridge. It delivers accurate and deadly automatic fire at long range to suppress and destroy point and area targets.</description>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="W85XWJ"]/verbs/li[@Class="CombatExtended.VerbPropertiesCE"]/range</xpath>
+        <value>
+            <range>80</range>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="W85XWJ"]/comps/li[@Class="CombatExtended.CompProperties_AmmoUser"]/magazineSize</xpath>
+        <value>
+            <magazineSize>120</magazineSize>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationRemove">
+        <xpath>Defs/ThingDef[defName="W85XWJ"]/equippedStatOffsets/MoveSpeed</xpath>
+    </Operation>
+
+    <!-- EM80 rail machine gun (QJZ-59) -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="CMC_QJZFivenine"]/label</xpath>
+        <value>
+            <label>EM80 rail machine gun</label>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="CMC_QJZFivenine"]/description</xpath>
+        <value>
+            <description>The EM80 is a medium machine gun chambered for the 8x50mm electromagnetic rail cartridge. The extended, reinforced rails provide excellent effect at long range, but the rate of fire is rather low.</description>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="QTS9_OICW"]/statBases/RangedWeapon_DamageMultiplier</xpath>
+        <value>
+            <RangedWeapon_DamageMultiplier>0.15</RangedWeapon_DamageMultiplier>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="CMC_QJZFivenine"]/verbs/li[@Class="CombatExtended.VerbPropertiesCE"]/range</xpath>
+        <value>
+            <range>80</range>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="CMC_QJZFivenine"]/comps/li[@Class="CombatExtended.CompProperties_AmmoUser"]/magazineSize</xpath>
+        <value>
+            <magazineSize>120</magazineSize>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationRemove">
+        <xpath>Defs/ThingDef[defName="CMC_QJZFivenine"]/equippedStatOffsets/MoveSpeed</xpath>
+    </Operation>
+
+    <!-- EM72X smart rail AMR (101 XuanMing) -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="QBZoneooneXuanMing_Elite"]/label</xpath>
+        <value>
+            <label>EM72X "&lt;color=#FFAA00&gt;&lt;i&gt;Tsukuyomi&lt;/i&gt;&lt;/color&gt;" smart rail AMR</label>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="QBZoneooneXuanMing_Elite"]/description</xpath>
+        <value>
+            <description>The EM72X "&lt;color=#FFAA00&gt;&lt;i&gt;Tsukuyomi&lt;/i&gt;&lt;/color&gt;" is an anti-materiel rifle chambered for the guided 12x65mm electromagnetic rail cartridge. The unique 12x65mm HPV-MTS cartridge used in this rifle delivers exceptional penetration and excellent effect against almost any target.</description>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="QBZoneooneXuanMing_Elite"]/verbs/li[@Class="CombatExtended.VerbPropertiesCE"]/range</xpath>
+        <value>
+            <range>160</range>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationRemove">
+        <xpath>Defs/ThingDef[defName="QBZoneooneXuanMing_Elite"]/equippedStatOffsets/MoveSpeed</xpath>
+    </Operation>
+
+    <!-- EM8 rail shotgun (QBA-49) -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="CMC_QBAfournine"]/label</xpath>
+        <value>
+            <label>EM8 rail shotgun</label>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="CMC_QBAfournine"]/description</xpath>
+        <value>
+            <description>The EM8 is a tube-fed semi-automatic shotgun chambered for 12 gauge electromagnetic shells. It provides similar capability to a conventional combat shotgun, but is much more powerful. This shotgun is reloaded using speedloader tubes.</description>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="CMC_QBAfournine"]/verbs/li[@Class="CombatExtended.VerbPropertiesCE"]/range</xpath>
+        <value>
+            <range>40</range>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="CMC_QBAfournine"]/comps/li[@Class="CombatExtended.CompProperties_AmmoUser"]/ammoSet</xpath>
+        <value>
+            <ammoSet>AmmoSet_CMC_12Gauge</ammoSet>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="CMC_QBAfournine"]/verbs/li[@Class="CombatExtended.VerbPropertiesCE"]/defaultProjectile</xpath>
+        <value>
+            <defaultProjectile>Bullet_12GaugeElectromagnetic_AP</defaultProjectile>
+        </value>
+    </Operation>
+
+    <!-- EM12 rail shotgun (QBA-57) -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="CMC_QBXfiveseven_CSG"]/label</xpath>
+        <value>
+            <label>EM12 rail shotgun</label>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="CMC_QBXfiveseven_CSG"]/description</xpath>
+        <value>
+            <description>The EM12 is a magazine-fed automatic shotgun chambered for 12 gauge electromagnetic shells, designed to fire large bursts to destroy hardened targets at close range.</description>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="CMC_QBXfiveseven_CSG"]/verbs/li[@Class="CombatExtended.VerbPropertiesCE"]/range</xpath>
+        <value>
+            <range>40</range>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="CMC_QBXfiveseven_CSG"]/comps/li[@Class="CombatExtended.CompProperties_AmmoUser"]/ammoSet</xpath>
+        <value>
+            <ammoSet>AmmoSet_CMC_12Gauge</ammoSet>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="CMC_QBXfiveseven_CSG"]/verbs/li[@Class="CombatExtended.VerbPropertiesCE"]/defaultProjectile</xpath>
+        <value>
+            <defaultProjectile>Bullet_12GaugeElectromagnetic_AP</defaultProjectile>
+        </value>
+    </Operation>
+
+    <!-- EM16 rail shotgun (QBA-69) -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="CMC_QBXninenine_CSG"]/label</xpath>
+        <value>
+            <label>EM16 rail shotgun</label>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="CMC_QBXninenine_CSG"]/description</xpath>
+        <value>
+            <description>The EM16 is a drum-fed automatic shotgun chambered for 12 gauge electromagnetic shells. With its large drum and high rate of fire, it is designed to quickly clear enclosed spaces.</description>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="CMC_QBXninenine_CSG"]/verbs/li[@Class="CombatExtended.VerbPropertiesCE"]/range</xpath>
+        <value>
+            <range>40</range>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="CMC_QBXninenine_CSG"]/verbs/li[@Class="CombatExtended.VerbPropertiesCE"]/burstShotCount</xpath>
+        <value>
+            <burstShotCount>4</burstShotCount>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="CMC_QBXninenine_CSG"]/comps/li[@Class="CombatExtended.CompProperties_AmmoUser"]/ammoSet</xpath>
+        <value>
+            <ammoSet>AmmoSet_CMC_12Gauge</ammoSet>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="CMC_QBXninenine_CSG"]/verbs/li[@Class="CombatExtended.VerbPropertiesCE"]/defaultProjectile</xpath>
+        <value>
+            <defaultProjectile>Bullet_12GaugeElectromagnetic_AP</defaultProjectile>
+        </value>
+    </Operation>
+
+</Patch>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+    <name>Celetech American Edition</name>
+    <author>Caravan of the Souls</author>
+    <packageId>Caravan.Celetech.Americanized</packageId>
+    <modVersion IgnoreIfNoMatchingField="True">1.1</modVersion>
+    <supportedVersions>
+        <li>1.6</li>
+    </supportedVersions>
+    <modDependencies>
+        <li>
+            <packageId>TOT.CeleTech.MKIII</packageId>
+            <displayName>CeleTech Arsenal MKIII</displayName>
+            <steamWorkshopUrl>steam://url/CommunityFilePage/3446237098</steamWorkshopUrl>
+        </li>
+        <li>
+            <packageId>CETeam.CombatExtended</packageId>
+            <displayName>Combat Extended</displayName>
+            <steamWorkshopUrl>steam://url/CommunityFilePage/2890901044</steamWorkshopUrl>
+        </li>
+    </modDependencies>
+    <loadAfter>
+        <li>TOT.CeleTech.MKIII</li>
+        <li>CETeam.CombatExtended</li>
+    </loadAfter>
+    <description>Changes the naming scheme of CE-compatible Celetech weapons from the Chinese military scheme to a generic US-adjacent scheme.</description>
+</ModMetaData>

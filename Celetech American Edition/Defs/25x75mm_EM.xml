@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <ThingCategoryDef>
+		<defName>AmmoCategory_CMC_25x75mm</defName>
+		<label>25x75mm Electromagnetic</label>
+		<parent>AmmoAdvanced</parent>
+		<iconPath>UI/Icons/ThingCategories/CaliberCharge</iconPath>
+	</ThingCategoryDef>
+
+	<!-- ==================== AmmoSet ========================== -->
+
+	<CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_CMC_25x75mm</defName>
+		<label>25x75mm Electromagnetic</label>
+		<ammoTypes>
+			<Ammo_25x75mmElectromagnetic_AP>Bullet_25x75mmElectromagnetic_AP</Ammo_25x75mmElectromagnetic_AP>
+			<Ammo_25x75mmElectromagnetic_Ion>Bullet_25x75mmElectromagnetic_Ion</Ammo_25x75mmElectromagnetic_Ion>
+		</ammoTypes>
+		<similarTo>AmmoSet_ChargedShotgun</similarTo>
+	</CombatExtended.AmmoSetDef>
+
+	<!-- ==================== Ammo ========================== -->
+
+	<ThingDef Class="CombatExtended.AmmoDef" Name="25x75mmCMCBase" ParentName="SpacerAmmoBase" Abstract="True">
+		<description>Heavy electromagnetic multi-shot cartridge designed for shotgun-type weapons.</description>
+		<statBases>
+			<Mass>0.095</Mass>
+			<Bulk>0.1</Bulk>
+		</statBases>
+		<tradeTags>
+			<li>CE_AutoEnableTrade</li>
+			<li>CE_AutoEnableCrafting_FabricationBench</li>
+		</tradeTags>
+		<thingCategories>
+			<li>AmmoCategory_CMC_25x75mm</li>
+		</thingCategories>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="25x75mmCMCBase">
+		<defName>Ammo_25x75mmElectromagnetic_AP</defName>
+		<label>25x75mm Electromagnetic (AP)</label>
+		<graphicData>
+			<texPath>Things/Ammo/Charged/ShotgunRegular</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<ammoClass>CMC_EMBullet_AP</ammoClass>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="25x75mmCMCBase">
+		<defName>Ammo_25x75mmElectromagnetic_Ion</defName>
+		<label>25x75mm Electromagnetic (Ion)</label>
+		<graphicData>
+			<texPath>Things/Ammo/Charged/ShotgunIon</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<ammoClass>CMC_EMBullet_Ion</ammoClass>
+		<generateAllowChance>0.4</generateAllowChance>
+	</ThingDef>
+
+	<!-- ================== Projectiles ================== -->
+
+	<ThingDef Name="Base25x75mmCMCBullet" ParentName="BaseBulletCE" Abstract="true">
+		<graphicData>
+			<texPath>Things/Projectile/Charged/ChargeShot</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Bullet</damageDef>
+			<speed>154</speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="Base25x75mmCMCBullet">
+		<defName>Bullet_25x75mmElectromagnetic_AP</defName>
+		<label>25x75mm Electromagnetic projectile (AP)</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageAmountBase>14</damageAmountBase>
+			<secondaryDamage>
+				<li>
+					<def>Bomb_Secondary</def>
+					<amount>5</amount>
+				</li>
+			</secondaryDamage>
+			<armorPenetrationSharp>25</armorPenetrationSharp>
+			<armorPenetrationBlunt>20</armorPenetrationBlunt>
+			<pelletCount>16</pelletCount>
+			<spreadMult>6.9</spreadMult>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="Base25x75mmCMCBullet">
+		<defName>Bullet_25x75mmElectromagnetic_Ion</defName>
+		<label>25x75mm Electromagnetic projectile (Ion)</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageAmountBase>14</damageAmountBase>
+			<secondaryDamage>
+				<li>
+					<def>EMP</def>
+					<amount>5</amount>
+				</li>
+			</secondaryDamage>
+			<armorPenetrationSharp>25</armorPenetrationSharp>
+			<armorPenetrationBlunt>20</armorPenetrationBlunt>
+			<pelletCount>16</pelletCount>
+			<spreadMult>6.9</spreadMult>
+			<empShieldBreakChance>1</empShieldBreakChance>
+		</projectile>
+	</ThingDef>
+
+	<!-- ==================== Recipes ========================== -->
+
+	<RecipeDef ParentName="ChargeAmmoRecipeBase">
+		<defName>MakeAmmo_25x75mmElectromagnetic_AP</defName>
+		<label>make 25x75mm Electromagnetic (AP) shell x200</label>
+		<description>Craft 200 25x75mm Electromagnetic (AP) shells.</description>
+		<jobString>Making 25x75mm Electromagnetic (AP) shells.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Uranium</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentSpacer</li>
+					</thingDefs>
+				</filter>
+				<count>8</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Plasteel</li>
+				<li>Uranium</li>
+				<li>ComponentSpacer</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_25x75mmElectromagnetic_AP>200</Ammo_25x75mmElectromagnetic_AP>
+		</products>
+		<workAmount>8200</workAmount>
+	</RecipeDef>
+
+	<RecipeDef ParentName="ChargeAmmoRecipeBase">
+		<defName>MakeAmmo_25x75mmElectromagnetic_Ion</defName>
+		<label>make 25x75mm Electromagnetic (Ion) shell x200</label>
+		<description>Craft 200 25x75mm Electromagnetic (Ion) shells.</description>
+		<jobString>Making 25x75mm Electromagnetic (Ion) shells.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Uranium</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentSpacer</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Plasteel</li>
+				<li>Uranium</li>
+				<li>ComponentSpacer</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_25x75mmElectromagnetic_Ion>200</Ammo_25x75mmElectromagnetic_Ion>
+		</products>
+		<workAmount>9000</workAmount>
+	</RecipeDef>
+
+</Defs>

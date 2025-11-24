@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+    <!-- 30mm rotary cannon -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="CMCcannon"]/statBases</xpath>
+        <value>
+            <NightVisionEfficiency>1.0</NightVisionEfficiency>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="CMCcannon"]/label</xpath>
+        <value>
+            <label>EML-30 "Barragefire" rotary cannon turret</label>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="CMCcannon"]/description</xpath>
+        <value>
+            <description>A rotary electromagnetic rail cannon firing the 30x114mm APDS cartridge. Delivers a large volume of accurate and highly lethal fire, but consumes a lot of ammunition.</description>
+        </value>
+    </Operation>
+
+    <!-- 4x 30mm CIWS -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="CMCcannon_BF"]/statBases</xpath>
+        <value>
+            <NightVisionEfficiency>1.0</NightVisionEfficiency>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="CMCcannon_BF"]/label</xpath>
+        <value>
+            <label>EML-44 CIWS</label>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="CMCcannon_BF"]/description</xpath>
+        <value>
+            <description>A close in weapons system firing the 30x114mm electromagnetic APDS cartridge. Consumes a massive amount of ammunition.</description>
+        </value>
+    </Operation>
+
+    <!-- 12x80mm sniper turret -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="CMC_Svcannon"]/statBases</xpath>
+        <value>
+            <NightVisionEfficiency>1.0</NightVisionEfficiency>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="CMC_Svcannon"]/label</xpath>
+        <value>
+            <label>EML-18 "Soulhunter" sniper turret</label>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="CMC_Svcannon"]/description</xpath>
+        <value>
+            <description>Equipped with advanced electro-optical and infrared sensors, this smart sniper turret fires the guided 12x80mm electromagnetic rail cartridge.</description>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Gun_CMCMSVcannon"]/verbs/li[@Class="CombatExtended.VerbPropertiesCE"]/range</xpath>
+        <value>
+            <range>84</range>
+        </value>
+    </Operation>
+
+    <!-- 45x250mm cannon -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="CMC_EMcannon"]/statBases</xpath>
+        <value>
+            <NightVisionEfficiency>1.0</NightVisionEfficiency>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="CMC_EMcannon"]/label</xpath>
+        <value>
+            <label>EML-45 "Thundercore" autocannon turret</label>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="CMC_EMcannon"]/description</xpath>
+        <value>
+            <description>A heavy electromagnetic autocannon firing the 45x250mm rail shell, available in HE and APDS-EMP. Delivers excellent effect at extended range.</description>
+        </value>
+    </Operation>
+    
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Gun_EMPCannon"]/verbs/li[@Class="CombatExtended.VerbPropertiesCE"]/warmupTime</xpath>
+        <value>
+            <warmupTime>0.8</warmupTime>
+        </value>
+    </Operation>
+
+    <!-- ====== 1x1 lightweight turrets ====== -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="CMC_CSGTurret" or defName="CMC_CSGTurret_B" or defName="CMC_CSGTurret_C"]/statBases</xpath>
+        <value>
+            <NightVisionEfficiency>1.0</NightVisionEfficiency>
+        </value>
+    </Operation>
+
+    <!-- Shotgun turret -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="CMC_CSGTurret"]/label</xpath>
+        <value>
+            <label>EML-12 "Starburst" LWS</label>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="CMC_CSGTurret"]/description</xpath>
+        <value>
+            <description>An EML-12 "Starburst" autocannon mounted on the Lightweight Weapons Station. Firing the 25x75mm electromagnetic multi-shot cartridge, the EML-12 is designed to suppress targets at close range.</description>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Gun_CMCAntiInfantryCSG"]/verbs/li[@Class="CombatExtended.VerbPropertiesCE"]/warmupTime</xpath>
+        <value>
+            <warmupTime>0.2</warmupTime>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Gun_CMCAntiInfantryCSG"]/verbs/li[@Class="CombatExtended.VerbPropertiesCE"]/range</xpath>
+        <value>
+            <range>42</range>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Gun_CMCAntiInfantryCSG"]/comps/li[@Class="CombatExtended.CompProperties_AmmoUser"]/ammoSet</xpath>
+        <value>
+            <ammoSet>AmmoSet_CMC_25x75mm</ammoSet>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Gun_CMCAntiInfantryCSG"]/verbs/li[@Class="CombatExtended.VerbPropertiesCE"]/defaultProjectile</xpath>
+        <value>
+            <defaultProjectile>Bullet_25x75mmElectromagnetic_AP</defaultProjectile>
+        </value>
+    </Operation>
+
+    <!-- 8x50mm turret -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="CMC_CSGTurret_B"]/label</xpath>
+        <value>
+            <label>EML-20 "Viper" LWS</label>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="CMC_CSGTurret_B"]/description</xpath>
+        <value>
+            <description>An EML-20 "Viper" autocannon mounted on the Lightweight Weapons Station. Firing the 12x80mm guided rail cartridge, the EML-20 is designed to engage point targets at long range.</description>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Gun_CMCAntiInfantryCSG_B"]/verbs/li[@Class="CombatExtended.VerbPropertiesCE"]/warmupTime</xpath>
+        <value>
+            <warmupTime>0.2</warmupTime>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Gun_CMCAntiInfantryCSG_B"]/verbs/li[@Class="CombatExtended.VerbPropertiesCE"]/burstShotCount</xpath>
+        <value>
+            <burstShotCount>2</burstShotCount>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Gun_CMCAntiInfantryCSG_B"]/verbs/li[@Class="CombatExtended.VerbPropertiesCE"]/range</xpath>
+        <value>
+            <range>68</range>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Gun_CMCAntiInfantryCSG_B"]/comps/li[@Class="CombatExtended.CompProperties_AmmoUser"]/magazineSize</xpath>
+        <value>
+            <magazineSize>420</magazineSize>
+        </value>
+    </Operation>
+
+    <!-- 6x36mm turret -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="CMC_CSGTurret_C"]/label</xpath>
+        <value>
+            <label>EML-16 "Aria" LWS</label>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="CMC_CSGTurret_C"]/description</xpath>
+        <value>
+            <description>An EML-16 "Aria" autocannon mounted on the Lightweight Weapons Station. Firing the 6x36mm rail cartridge, the EML-16 is designed to provide a high volume of automatic fire at medium range.</description>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Gun_CMCAntiInfantryCSG_C"]/verbs/li[@Class="CombatExtended.VerbPropertiesCE"]/warmupTime</xpath>
+        <value>
+            <warmupTime>0.2</warmupTime>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Gun_CMCAntiInfantryCSG_C"]/verbs/li[@Class="CombatExtended.VerbPropertiesCE"]/burstShotCount</xpath>
+        <value>
+            <burstShotCount>10</burstShotCount>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Gun_CMCAntiInfantryCSG_C"]/verbs/li[@Class="CombatExtended.VerbPropertiesCE"]/range</xpath>
+        <value>
+            <range>56</range>
+        </value>
+    </Operation>
+    
+</Patch>
