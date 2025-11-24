@@ -19,7 +19,7 @@
 
     <!-- Eveliet -->
     <Operation Class="PatchOperationAdd">
-        <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="HAR_EL_Race_Eveliet_a"]/statBases</xpath>
+        <xpath>Defs/AlienRace.ThingDef_AlienRace[@Name="HAR_Eveliet_Base"]/statBases</xpath>
         <value>
             <PawnBeauty>3</PawnBeauty>
         </value>
@@ -131,7 +131,7 @@
 
     <!-- Nearmare -->
     <Operation Class="PatchOperationAdd">
-        <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="HAR_Nearmaere"]/statBases</xpath>
+        <xpath>Defs/AlienRace.ThingDef_AlienRace[@Name="HAR_Nearmaere_Base"]/statBases</xpath>
         <value>
             <PawnBeauty>1</PawnBeauty>
         </value>
@@ -187,7 +187,7 @@
 
     <!-- Qualeela-genus -->
     <Operation Class="PatchOperationAdd">
-        <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="HAR_Qualeela"]/statBases</xpath>
+        <xpath>Defs/AlienRace.ThingDef_AlienRace[@Name="HAR_Qualeela_Base"]/statBases</xpath>
         <value>
             <PawnBeauty>2</PawnBeauty>
         </value>
@@ -267,7 +267,7 @@
 
     <!-- Zoichor -->
     <Operation Class="PatchOperationAdd">
-        <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="HAR_Zoichor"]/statBases</xpath>
+        <xpath>Defs/AlienRace.ThingDef_AlienRace[@Name="HAR_Zoichor_Base"]/statBases</xpath>
         <value>
             <PawnBeauty>4</PawnBeauty>
         </value>

@@ -740,21 +740,21 @@
     </Operation>
 
     <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="Ammo_CMC_Ammo_45x250mm_APDS"]/label</xpath>
+        <xpath>Defs/ThingDef[defName="Ammo_CMC_Ammo_45x250mm_APDS-EMP"]/label</xpath>
         <value>
             <label>45x250mm APDS-EMP</label>
         </value>
     </Operation>
 
     <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="Bullet_CMC_Ammo_45x250mm_APDS"]/projectile/damageAmountBase</xpath>
+        <xpath>Defs/ThingDef[defName="Bullet_CMC_Ammo_45x250mm_APDS-EMP"]/projectile/damageAmountBase</xpath>
         <value>
             <damageAmountBase>120</damageAmountBase>
         </value>
     </Operation>
 
     <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="Bullet_CMC_Ammo_45x250mm_APDS"]/projectile/secondaryDamage</xpath>
+        <xpath>Defs/ThingDef[defName="Bullet_CMC_Ammo_45x250mm_APDS-EMP"]/projectile/secondaryDamage</xpath>
         <value>
             <secondaryDamage>
                 <li>

@@ -1,6 +1,6 @@
 <loadFolders>
 	<v1.6>
 		<li>/</li>
-		<li IfModActive="Vortex.CustomizeWeapon">Defs/CustomizeWeapon</li>
+		<li IfModActive="Vortex.CustomizeWeapon">CustomizeWeapon</li>
 	</v1.6>
 </loadFolders>

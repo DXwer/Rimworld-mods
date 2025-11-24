@@ -1,0 +1,9 @@
+<ModMetaData>
+	<name>Saclean Bed Fix</name>
+	<author>Caravan of the Souls</author>
+    <packageId>Caravan.BedFix</packageId>
+	<supportedVersions>
+		<li>1.6</li>
+	</supportedVersions>
+	<description>A patch that fixes a vanilla overwrite with the beds from the Saclean race mod.</description>
+</ModMetaData>

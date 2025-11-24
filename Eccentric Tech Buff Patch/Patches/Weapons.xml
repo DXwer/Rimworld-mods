@@ -121,9 +121,14 @@
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="Eccentric_Gun_E16PR_Hitomi"]/statBases/SightsEfficiency</xpath>
+        <xpath>Defs/ThingDef[defName="Eccentric_Gun_E16PR_Hitomi"]/statBases</xpath>
         <value>
-            <SightsEfficiency>4.2</SightsEfficiency>
+            <statBases>
+                <Mass>5.90</Mass>
+                <Bulk>12.20</Bulk>
+                <WorkToMake>66000</WorkToMake>
+                <SightsEfficiency>4.2</SightsEfficiency>
+            </statBases>
         </value>
     </Operation>
 

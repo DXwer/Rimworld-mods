@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+    
+    <Operation Class="PatchOperationAttributeSet">
+        <xpath>Defs/ThingDef[defName="HAR_SL_Bed"]</xpath>
+        <attribute>Name</attribute>
+        <value>HAR_SL_Bed</value>
+    </Operation>
+
+    <Operation Class="PatchOperationAttributeSet">
+        <xpath>Defs/ThingDef[defName="HAR_SL_DoubleBed"]</xpath>
+        <attribute>Name</attribute>
+        <value>HAR_SL_DoubleBed</value>
+    </Operation>
+
+</Patch>

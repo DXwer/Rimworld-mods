@@ -248,7 +248,7 @@
     <ThingDef Name="BaseEccentric6x45mmChargedBullet" ParentName="Base6x24mmChargedBullet" Abstract="True">
         <thingClass>EccentricProjectiles.ProjectileCE_WithEffects</thingClass>
         <graphicData>
-            <texPath>Things/Eccentric/Projectile/ChargeProjectile_Medium</texPath>
+            <texPath>Eccentric/Things/Projectile/ChargeProjectile_Medium</texPath>
             <graphicClass>Graphic_Single</graphicClass>
             <shaderType>TransparentPostLight</shaderType>
         </graphicData>

@@ -101,7 +101,7 @@
         <label>84x254mm charge rocket (HEDP)</label>
         <thingClass>EccentricProjectiles.ProjectileCE_ExplosiveWithEffects</thingClass>
         <graphicData>
-            <texPath>Things/Eccentric/Projectile/CAW5Projectile</texPath>
+            <texPath>Eccentric/Things/Projectile/CAW5Projectile</texPath>
             <graphicClass>Graphic_Single</graphicClass>
             <shaderType>TransparentPostLight</shaderType>
             <drawSize>1</drawSize>
@@ -212,7 +212,7 @@
         <label>84x254mm charge rocket (EMP)</label>
         <thingClass>EccentricProjectiles.ProjectileCE_ExplosiveWithEffects</thingClass>
         <graphicData>
-            <texPath>Things/Eccentric/Projectile/CAW5Projectile</texPath>
+            <texPath>Eccentric/Things/Projectile/CAW5Projectile</texPath>
             <graphicClass>Graphic_Single</graphicClass>
             <shaderType>TransparentPostLight</shaderType>
             <drawSize>1</drawSize>

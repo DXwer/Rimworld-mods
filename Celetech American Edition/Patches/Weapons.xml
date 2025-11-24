@@ -629,8 +629,8 @@
         </value>
     </Operation>
 
-    <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="QTS9_OICW"]/statBases/RangedWeapon_DamageMultiplier</xpath>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="CMC_QJZFivenine"]/statBases</xpath>
         <value>
             <RangedWeapon_DamageMultiplier>0.15</RangedWeapon_DamageMultiplier>
         </value>
@@ -674,10 +674,6 @@
         <value>
             <range>160</range>
         </value>
-    </Operation>
-
-    <Operation Class="PatchOperationRemove">
-        <xpath>Defs/ThingDef[defName="QBZoneooneXuanMing_Elite"]/equippedStatOffsets/MoveSpeed</xpath>
     </Operation>
 
     <!-- EM8 rail shotgun (QBA-49) -->
