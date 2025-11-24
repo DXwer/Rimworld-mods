@@ -11,8 +11,8 @@ namespace BeautyOpinionMod
 {
     public class ThoughtWorker_Pretty : ThoughtWorker
     {
-      protected override ThoughtState CurrentSocialStateInternal(Pawn pawn, Pawn other)
-      {
+        protected override ThoughtState CurrentSocialStateInternal(Pawn pawn, Pawn other)
+        {
             if (!other.RaceProps.Humanlike || !RelationsUtility.PawnsKnowEachOther(pawn, other))
             {
                 return false;

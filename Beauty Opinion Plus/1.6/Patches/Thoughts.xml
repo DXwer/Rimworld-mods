@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Patch>
     <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThoughtDef[defName="Pretty"]/workerClass</xpath>
+        <value>
+            <workerClass>BeautyOpinionMod.ThoughtWorker_Pretty</workerClass>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThoughtDef[defName="Pretty"]/stages</xpath>
         <value>
             <stages>
@@ -13,35 +20,35 @@
                     <baseOpinionOffset>40</baseOpinionOffset>
                 </li>
                 <li>
-                    <label>physically stunning</label>
+                    <label>gorgeous</label>
                     <baseOpinionOffset>60</baseOpinionOffset>
                 </li>
                 <li>
-                    <label>physically stunning</label>
+                    <label>dazzling</label>
                     <baseOpinionOffset>80</baseOpinionOffset>
                 </li>
                 <li>
-                    <label>physically stunning</label>
+                    <label>captivating</label>
                     <baseOpinionOffset>100</baseOpinionOffset>
                 </li>
                 <li>
-                    <label>physically stunning</label>
+                    <label>ravishing</label>
                     <baseOpinionOffset>120</baseOpinionOffset>
                 </li>
                 <li>
-                    <label>physically stunning</label>
+                    <label>exquisite</label>
                     <baseOpinionOffset>140</baseOpinionOffset>
                 </li>
                 <li>
-                    <label>physically stunning</label>
+                    <label>heavenly beauty</label>
                     <baseOpinionOffset>160</baseOpinionOffset>
                 </li>
                 <li>
-                    <label>physically stunning</label>
+                    <label>celestial beauty</label>
                     <baseOpinionOffset>180</baseOpinionOffset>
                 </li>
                 <li>
-                    <label>physically stunning</label>
+                    <label>ethereal beauty</label>
                     <baseOpinionOffset>200</baseOpinionOffset>
                 </li>
             </stages>
