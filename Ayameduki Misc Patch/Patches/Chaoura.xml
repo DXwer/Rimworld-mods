@@ -3,4 +3,8 @@
     <Operation Class="PatchOperationRemove">
         <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="HAR_CO_Race_Chaoura_a"]/comps/li[@Class="CompProperties_HAR_CO_Dark"]</xpath>
     </Operation>
+    
+    <Operation Class="PatchOperationRemove">
+        <xpath>Defs/HediffDef[defName="HAR_CO_Hediff_a"]/comps/li[@Class="Aya_Common.Aya_CompProperties_Hediff_SeverityPerDay"]</xpath>
+    </Operation>
 </Patch>
